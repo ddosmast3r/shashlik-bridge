@@ -61,6 +61,11 @@
     gap: 5px;
   }
   .address svg { width: 12px; height: 12px; fill: var(--red); flex-shrink: 0; }
+  .address span {
+    text-decoration: underline dotted;
+    text-underline-offset: 3px;
+    text-decoration-color: var(--muted);
+  }
 
   .menu { margin-top: 20px; width: 100%; }
 
@@ -213,10 +218,10 @@
 
     <p class="subtitle">Напиши или позвони<br>забронируем тебе лучший стол</p>
 
-    <p class="address">
+    <a class="address" id="addr-link" href="#" data-goal="make-route">
       <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
-      Пятигорск, ул. Кирова, 27
-    </p>
+      <span>Пятигорск, ул. Кирова, 27</span>
+    </a>
 
     <div class="menu">
       <a class="btn-phone" id="btn-phone" href="#" data-goal="make-call">
@@ -300,6 +305,7 @@
   document.getElementById("btn-max").href       = CONFIG.max;
   document.getElementById("btn-reviews").href   = CONFIG.reviews;
   document.getElementById("btn-route").href     = CONFIG.route;
+  document.getElementById("addr-link").href     = CONFIG.route;
   document.getElementById("btn-2gis").href      = CONFIG.gis2;
 
   // Яндекс.Метрика
