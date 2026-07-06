@@ -1,2 +1,8 @@
 .DS_Store
 .env
+
+# исходники графики — сайту не нужны, в вёрстке используются конвертированные PNG/SVG
+public/image/Векторы.pdf
+public/image/Логотип_MAX.svg.webp
+public/image/Telegram_2019_Logo.svg.webp
+public/image/vector-whatsapp-social-media-logo_1093524-447.avif
