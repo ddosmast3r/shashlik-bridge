@@ -193,14 +193,7 @@
   .icon-img   { object-fit: contain; background: none; }
   .icon-ya    { background: #fc3f1d; }
   .icon-route { background: #17120d; }
-  .icon-ig    { background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7); }
-
-  .legal {
-    margin: 12px 2px 0;
-    font-size: 10.5px;
-    line-height: 1.45;
-    color: var(--muted);
-  }
+  .icon-2gis  { background: #19aa1e; font-weight: 800; font-size: 13px; color: #fff; letter-spacing: .3px; }
 
   footer {
     margin-top: auto;
@@ -218,7 +211,7 @@
 
     <img class="logo" src="public/image/logo.png" alt="Чё? Шашлык — ресторан кавказской кухни">
 
-    <p class="subtitle">Напиши или позвони —<br>забронируем тебе лучший стол</p>
+    <p class="subtitle">Напиши или позвони<br>забронируем тебе лучший стол</p>
 
     <p class="address">
       <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
@@ -270,15 +263,11 @@
           </span>
           <span>Маршрут<small>Кирова, 27</small></span>
         </a>
-        <a class="tile" id="btn-instagram" href="#" data-goal="click_instagram">
-          <span class="icon icon-ig">
-            <svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 0 1-1.38-.9c-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.88 5.88 0 0 0-2.13 1.38A5.88 5.88 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.8.72 1.48 1.38 2.13a5.88 5.88 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.88 5.88 0 0 0 2.13-1.38 5.88 5.88 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.88 5.88 0 0 0-1.38-2.13A5.88 5.88 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 12 18.16 6.16 6.16 0 0 0 12 5.84zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM19.85 5.59a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/></svg>
-          </span>
-          <span>Instagram*<small>Фото и меню</small></span>
+        <a class="tile" id="btn-2gis" href="#" data-goal="click_2gis">
+          <span class="icon icon-2gis">2ГИС</span>
+          <span>2ГИС<small class="rating">★ 4,4 отзывы</small></span>
         </a>
       </div>
-
-      <p class="legal">* Instagram принадлежит компании Meta, которая признана экстремистской организацией, её деятельность запрещена на территории РФ.</p>
     </div>
 
     <footer>
@@ -300,7 +289,7 @@
     telegram:  "https://t.me/che_shashlik",
     max:       "https://max.ru/u/f9LHodD0cOJk5PfOJ17g-RiKk7h7qEadSUoC2X9kvgjHrePDrhTh9YJaDyo",
     reviews:   "https://yandex.ru/maps/org/chyo_shashlyk_/30239245640/reviews/",
-    instagram: "https://instagram.com/che__shashlik/",
+    gis2:      "https://2gis.ru/pyatigorsk/firm/70000001109313094/tab/reviews",
     route:     "https://yandex.ru/maps/?rtext=~44.036037,43.078323&rtt=auto" // координаты ресторана
   };
   /* ============================================================ */
@@ -311,7 +300,7 @@
   document.getElementById("btn-max").href       = CONFIG.max;
   document.getElementById("btn-reviews").href   = CONFIG.reviews;
   document.getElementById("btn-route").href     = CONFIG.route;
-  document.getElementById("btn-instagram").href = CONFIG.instagram;
+  document.getElementById("btn-2gis").href      = CONFIG.gis2;
 
   // Яндекс.Метрика
   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};

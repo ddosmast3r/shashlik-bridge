@@ -1,0 +1,17 @@
+name: Deploy to server
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pull latest main on server
+        env:
+          DEPLOY_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+        run: |
+          install -m 600 /dev/null deploy_key
+          echo "$DEPLOY_KEY" > deploy_key
+          ssh -i deploy_key -o StrictHostKeyChecking=accept-new root@72.56.33.94 deploy
