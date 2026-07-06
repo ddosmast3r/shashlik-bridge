@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Чё? Шашлык — забронировать стол</title>
+<meta name="description" content="Чё? Шашлык — ресторан кавказской кухни в Пятигорске. Бронь стола: WhatsApp, Telegram, MAX или по телефону.">
+<link rel="icon" type="image/svg+xml" href="public/image/favicon.svg">
+<link rel="apple-touch-icon" href="public/image/apple-touch-icon.png">
+<style>
+  :root {
+    --bg: #f3eee6;
+    --card: #fffdfa;
+    --card-border: #e9e2d6;
+    --text: #17120d;
+    --muted: #8d8177;
+    --red: #e8262c;
+    --red-deep: #c4161c;
+    --shadow: 0 1px 3px rgba(60, 45, 30, .07), 0 4px 14px rgba(60, 45, 30, .05);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100dvh;
+    padding: 26px 18px 20px;
+  }
+  .wrap {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  /* белый фон PNG растворяется на светлом фоне */
+  .logo { width: 250px; max-width: 80%; height: auto; mix-blend-mode: multiply; }
+
+  .subtitle {
+    margin-top: 4px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.4;
+    color: var(--text);
+  }
+  .address {
+    margin-top: 6px;
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .address svg { width: 12px; height: 12px; fill: var(--red); flex-shrink: 0; }
+
+  .menu { margin-top: 20px; width: 100%; }
+
+  a {
+    text-decoration: none;
+    color: var(--text);
+    -webkit-tap-highlight-color: transparent;
+    transition: transform .1s ease, box-shadow .15s ease;
+  }
+  a:active { transform: scale(.96); }
+
+  /* Главный CTA */
+  .btn-phone {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 16px;
+    background: linear-gradient(150deg, var(--red), var(--red-deep));
+    color: #fff;
+    box-shadow: 0 5px 16px rgba(232, 38, 44, .28);
+  }
+  .btn-phone .icon {
+    width: 46px; height: 46px;
+    border-radius: 13px;
+    background: rgba(255, 255, 255, .17);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .btn-phone .icon svg { width: 24px; height: 24px; fill: #fff; }
+  .btn-phone .label { flex: 1; text-align: left; }
+  .btn-phone .label b {
+    display: block;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -.01em;
+  }
+  .btn-phone .label small {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: .85;
+    margin-top: 2px;
+    letter-spacing: .02em;
+    font-variant-numeric: tabular-nums;
+  }
+  .btn-phone .chev { color: rgba(255, 255, 255, .75); flex-shrink: 0; }
+
+  .group-title {
+    margin: 18px 2px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .rows {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 16px;
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    box-shadow: var(--shadow);
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .row:hover { box-shadow: 0 3px 8px rgba(60, 45, 30, .1), 0 6px 20px rgba(60, 45, 30, .08); }
+  .row .icon {
+    width: 46px; height: 46px;
+    border-radius: 13px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .row .icon svg { width: 25px; height: 25px; fill: #fff; }
+  .row .label { flex: 1; }
+  .row .label small {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+  .row .chev { color: var(--muted); flex-shrink: 0; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    padding: 18px 8px 15px;
+    border-radius: 16px;
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    box-shadow: var(--shadow);
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .tile:hover { box-shadow: 0 3px 8px rgba(60, 45, 30, .1), 0 6px 20px rgba(60, 45, 30, .08); }
+  .tile .icon {
+    width: 50px; height: 50px;
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .tile .icon svg { width: 27px; height: 27px; fill: #fff; }
+  .tile small {
+    display: block;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+  .tile .rating { color: #e8940a; font-weight: 700; }
+
+  .icon-wa    { background: #25d366; }
+  .icon-tg    { background: #2aabee; }
+  .icon-img   { object-fit: contain; background: none; }
+  .icon-ya    { background: #fc3f1d; }
+  .icon-route { background: #17120d; }
+  .icon-ig    { background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7); }
+
+  .legal {
+    margin: 12px 2px 0;
+    font-size: 10.5px;
+    line-height: 1.45;
+    color: var(--muted);
+  }
+
+  footer {
+    margin-top: auto;
+    padding-top: 24px;
+    color: var(--muted);
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+
+    <img class="logo" src="public/image/logo.png" alt="Чё? Шашлык — ресторан кавказской кухни">
+
+    <p class="subtitle">Напиши или позвони —<br>забронируем тебе лучший стол</p>
+
+    <p class="address">
+      <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+      Пятигорск, ул. Кирова, 27
+    </p>
+
+    <div class="menu">
+      <a class="btn-phone" id="btn-phone" href="#" data-goal="click_phone">
+        <span class="icon">
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg>
+        </span>
+        <span class="label">
+          <b>Позвонить и забронировать</b>
+          <small>+7 962 499-00-44</small>
+        </span>
+        <svg class="chev" width="8" height="14" viewBox="0 0 8 14" fill="none"><path d="M1 1l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+
+      <p class="group-title">Или напиши нам</p>
+      <div class="rows">
+        <a class="row" id="btn-whatsapp" href="#" data-goal="click_whatsapp">
+          <span class="icon icon-wa">
+            <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>
+          </span>
+          <span class="label">WhatsApp<small>Написать и забронировать</small></span>
+          <svg class="chev" width="8" height="14" viewBox="0 0 8 14" fill="none"><path d="M1 1l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="row" id="btn-telegram" href="#" data-goal="click_telegram">
+          <span class="icon icon-tg">
+            <svg viewBox="0 0 24 24"><path d="M11.94 2a10 10 0 1 0 .12 20 10 10 0 0 0-.12-20zm4.9 6.8-1.64 7.77c-.12.55-.45.68-.9.42l-2.5-1.84-1.2 1.16c-.14.13-.25.25-.5.25l.17-2.53 4.6-4.16c.2-.17-.04-.27-.31-.1l-5.68 3.58-2.45-.77c-.53-.17-.54-.53.11-.79l9.57-3.69c.44-.16.83.11.68.7z"/></svg>
+          </span>
+          <span class="label">Telegram<small>Написать и забронировать</small></span>
+          <svg class="chev" width="8" height="14" viewBox="0 0 8 14" fill="none"><path d="M1 1l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="row" id="btn-max" href="#" data-goal="click_max">
+          <img class="icon icon-img" src="public/image/max-icon.png" alt="MAX">
+          <span class="label">MAX<small>Написать и забронировать</small></span>
+          <svg class="chev" width="8" height="14" viewBox="0 0 8 14" fill="none"><path d="M1 1l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <p class="group-title">Полезное</p>
+      <div class="grid">
+        <a class="tile" id="btn-reviews" href="#" data-goal="click_reviews">
+          <span class="icon icon-ya">
+            <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.82-5.06 4.69 1.34 6.77L12 17.2l-6.03 3.34 1.34-6.77-5.06-4.69 6.85-.82L12 2z"/></svg>
+          </span>
+          <span>Отзывы<small class="rating">★ 4,9 в Яндексе</small></span>
+        </a>
+        <a class="tile" id="btn-route" href="#" data-goal="click_route">
+          <span class="icon icon-route">
+            <svg viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9a1 1 0 0 0-1.42 0l-9 9a1 1 0 0 0 0 1.42l9 9a1 1 0 0 0 1.42 0l9-9a1 1 0 0 0 0-1.42zM14 14.5V12h-4v3H8v-4a1 1 0 0 1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+          </span>
+          <span>Маршрут<small>Кирова, 27</small></span>
+        </a>
+        <a class="tile" id="btn-instagram" href="#" data-goal="click_instagram">
+          <span class="icon icon-ig">
+            <svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 0 1-1.38-.9c-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.88 5.88 0 0 0-2.13 1.38A5.88 5.88 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.8.72 1.48 1.38 2.13a5.88 5.88 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.88 5.88 0 0 0 2.13-1.38 5.88 5.88 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.88 5.88 0 0 0-1.38-2.13A5.88 5.88 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 12 18.16 6.16 6.16 0 0 0 12 5.84zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM19.85 5.59a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/></svg>
+          </span>
+          <span>Instagram*<small>Фото и меню</small></span>
+        </a>
+      </div>
+
+      <p class="legal">* Instagram принадлежит компании Meta, которая признана экстремистской организацией, её деятельность запрещена на территории РФ.</p>
+    </div>
+
+    <footer>«Чё? Шашлык» · ресторан кавказской кухни<br>Пятигорск, ул. Кирова, 27</footer>
+  </div>
+
+<script>
+  /* ============================================================
+     НАСТРОЙКИ
+     ============================================================ */
+  var CONFIG = {
+    metrikaId: 0,                                    // TODO: номер счётчика Яндекс.Метрики
+    phone:     "+79624990044",
+    whatsapp:  "https://wa.me/79624990044?text=" +
+               encodeURIComponent("Здравствуйте! Хочу забронировать стол в «Чё? Шашлык»"),
+    telegram:  "https://t.me/che_shashlik",
+    max:       "https://max.ru/u/f9LHodD0cOJk5PfOJ17g-RiKk7h7qEadSUoC2X9kvgjHrePDrhTh9YJaDyo",
+    reviews:   "https://yandex.ru/maps/org/chyo_shashlyk_/30239245640/reviews/",
+    instagram: "https://instagram.com/che__shashlik/",
+    route:     "https://yandex.ru/maps/?rtext=~44.036037,43.078323&rtt=auto" // координаты ресторана
+  };
+  /* ============================================================ */
+
+  document.getElementById("btn-phone").href     = "tel:" + CONFIG.phone;
+  document.getElementById("btn-whatsapp").href  = CONFIG.whatsapp;
+  document.getElementById("btn-telegram").href  = CONFIG.telegram;
+  document.getElementById("btn-max").href       = CONFIG.max;
+  document.getElementById("btn-reviews").href   = CONFIG.reviews;
+  document.getElementById("btn-route").href     = CONFIG.route;
+  document.getElementById("btn-instagram").href = CONFIG.instagram;
+
+  // Яндекс.Метрика
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();
+  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  if (CONFIG.metrikaId) {
+    ym(CONFIG.metrikaId, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  }
+
+  // Цели: reachGoal при клике на каждую кнопку
+  document.querySelectorAll("[data-goal]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      if (CONFIG.metrikaId && typeof ym === "function") {
+        ym(CONFIG.metrikaId, "reachGoal", btn.dataset.goal);
+      }
+    });
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/METRIKA_ID" style="position:absolute;left:-9999px" alt=""></div></noscript>
+</body>
+</html>
