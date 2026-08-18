@@ -1,0 +1,14 @@
+{
+  "name": "cheshashlik-bridge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Лендинг-визитка ресторана «Чё? Шашлык», Пятигорск",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "check": "node scripts/check.mjs"
+  },
+  "devDependencies": {
+    "vite": "^7.1.5"
+  }
+}
