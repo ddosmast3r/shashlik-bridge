@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "check": "node scripts/check.mjs"
+    "check": "node scripts/check.mjs",
+    "inline-css": "node scripts/inline-css.mjs"
   },
   "devDependencies": {
     "vite": "^7.1.5"
