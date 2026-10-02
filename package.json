@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "check": "node scripts/check.mjs",
-    "inline-css": "node scripts/inline-css.mjs"
+    "build": "node scripts/build.mjs"
   },
   "devDependencies": {
     "vite": "^7.1.5"
