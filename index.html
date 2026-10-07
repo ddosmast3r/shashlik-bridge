@@ -11,7 +11,7 @@
       name="description"
       content="Ресторан кавказской кухни «Чё? Шашлык» в центре Пятигорска, пр. Кирова, 27А. Шашлык на мангале, хачапури, хинкали. Доставка по Пятигорску и бронь: +7 962 499-00-44."
     />
-    <meta name="theme-color" content="#1d1a1f" />
+    <meta name="theme-color" content="#33261b" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <!-- verification:start -->
 
@@ -323,6 +323,9 @@ a.addr:hover .addr__street { text-decoration: underline; text-decoration-thickne
 .b { min-width: 0; }
 @media (max-width: 860px) {
   .hero { display: block; }
+  /* на телефоне снимок от самого верха и до краёв экрана: без пустой полосы над ним */
+  .page { padding-top: 0; }
+  .hero__cover { margin: 0 calc(-1 * var(--gap)); border-radius: 0 0 var(--r-card) var(--r-card); }
   .hero__photos li { overflow: visible; }
   .hero__cover { height: auto; aspect-ratio: 5 / 4; }
   .hero__over { left: 18px; right: 18px; bottom: 16px; align-items: flex-end; gap: 12px; }
@@ -806,7 +809,7 @@ html:not(.js) [data-cookie-settings], html:not(.js) [data-copy-address], html:no
             <source
               media="(max-width: 860px)"
               srcset="/assets/img/hero/hero-1-m480.webp 480w, /assets/img/hero/hero-1-m700.webp 700w, /assets/img/hero/hero-1-m800.webp 800w"
-              sizes="calc(100vw - 20px)"
+              sizes="100vw"
               width="800"
               height="640"
             />
