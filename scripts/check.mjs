@@ -74,7 +74,7 @@ function checkRestaurant(name, node) {
       fail(name, `JSON-LD geo: координаты вне диапазона (${lat}, ${lon})`)
     }
   }
-  for (const hours of node.openingHoursSpecification ?? []) {
+  for (const hours of [].concat(node.openingHoursSpecification ?? [])) {
     if (!/^\d{2}:\d{2}$/.test(hours.opens ?? '') || !/^\d{2}:\d{2}$/.test(hours.closes ?? '')) {
       fail(name, 'JSON-LD openingHoursSpecification: opens/closes должны быть в формате ЧЧ:ММ')
     }

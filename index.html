@@ -12,6 +12,11 @@
       content="Ресторан кавказской кухни «Чё? Шашлык» в центре Пятигорска, пр. Кирова, 27А. Шашлык на мангале, хачапури, хинкали. Доставка по Пятигорску и бронь: +7 962 499-00-44."
     />
     <meta name="theme-color" content="#1d1a1f" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <!-- verification:start -->
+
+<!-- verification:end -->
+    <script>document.documentElement.classList.add('js');</script>
     <meta
       property="og:title"
       content="Чё? Шашлык, ресторан кавказской кухни в Пятигорске"
@@ -27,16 +32,19 @@
       property="og:image"
       content="https://cheshashlik.ru/assets/img/hero/hero-1.jpg"
     />
-    <link rel="icon" href="/assets/brand/favicon.png" />
+    <link rel="icon" href="/assets/brand/favicon.png?v=white-20261007" type="image/png" sizes="128x128" />
 
+    <link rel="preload" href="/assets/fonts/golos-text-400-cyrillic-721d01.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/golos-text-400-latin-65c68b.woff2" as="font" type="font/woff2" crossorigin />
     <style>
-/* Шрифты хранятся на сайте (без запросов к Google). Наборы: кириллица и латиница. */
+/* Локальные вариативные шрифты из брендбука: Golos Text и Cormorant Infant.
+   Диапазоны начертаний соответствуют оси wght в WOFF2. Кириллица и латиница. */
 
 /* cyrillic-ext */
 @font-face {
   font-family: 'Cormorant Infant';
   font-style: italic;
-  font-weight: 500;
+  font-weight: 300 700;
   font-display: swap;
   src: url(/assets/fonts/cormorant-infant-500-italic-cyrillic-ext-9e7780.woff2) format('woff2');
   unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
@@ -46,7 +54,7 @@
 @font-face {
   font-family: 'Cormorant Infant';
   font-style: italic;
-  font-weight: 500;
+  font-weight: 300 700;
   font-display: swap;
   src: url(/assets/fonts/cormorant-infant-500-italic-cyrillic-db76ac.woff2) format('woff2');
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
@@ -56,7 +64,7 @@
 @font-face {
   font-family: 'Cormorant Infant';
   font-style: italic;
-  font-weight: 500;
+  font-weight: 300 700;
   font-display: swap;
   src: url(/assets/fonts/cormorant-infant-500-italic-latin-ext-4e5d78.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
@@ -66,47 +74,7 @@
 @font-face {
   font-family: 'Cormorant Infant';
   font-style: italic;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/assets/fonts/cormorant-infant-500-italic-latin-298183.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Cormorant Infant';
-  font-style: italic;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/assets/fonts/cormorant-infant-500-italic-cyrillic-ext-9e7780.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-/* cyrillic */
-@font-face {
-  font-family: 'Cormorant Infant';
-  font-style: italic;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/assets/fonts/cormorant-infant-500-italic-cyrillic-db76ac.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-/* latin-ext */
-@font-face {
-  font-family: 'Cormorant Infant';
-  font-style: italic;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/assets/fonts/cormorant-infant-500-italic-latin-ext-4e5d78.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-/* latin */
-@font-face {
-  font-family: 'Cormorant Infant';
-  font-style: italic;
-  font-weight: 600;
+  font-weight: 300 700;
   font-display: swap;
   src: url(/assets/fonts/cormorant-infant-500-italic-latin-298183.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
@@ -116,7 +84,7 @@
 @font-face {
   font-family: 'Cormorant Infant';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300 700;
   font-display: swap;
   src: url(/assets/fonts/cormorant-infant-500-cyrillic-ext-97e050.woff2) format('woff2');
   unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
@@ -126,7 +94,7 @@
 @font-face {
   font-family: 'Cormorant Infant';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300 700;
   font-display: swap;
   src: url(/assets/fonts/cormorant-infant-500-cyrillic-3a2215.woff2) format('woff2');
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
@@ -136,7 +104,7 @@
 @font-face {
   font-family: 'Cormorant Infant';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300 700;
   font-display: swap;
   src: url(/assets/fonts/cormorant-infant-500-latin-ext-9eb70b.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
@@ -146,87 +114,7 @@
 @font-face {
   font-family: 'Cormorant Infant';
   font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/assets/fonts/cormorant-infant-500-latin-c0bcd9.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Cormorant Infant';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/assets/fonts/cormorant-infant-500-cyrillic-ext-97e050.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-/* cyrillic */
-@font-face {
-  font-family: 'Cormorant Infant';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/assets/fonts/cormorant-infant-500-cyrillic-3a2215.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-/* latin-ext */
-@font-face {
-  font-family: 'Cormorant Infant';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/assets/fonts/cormorant-infant-500-latin-ext-9eb70b.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-/* latin */
-@font-face {
-  font-family: 'Cormorant Infant';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/assets/fonts/cormorant-infant-500-latin-c0bcd9.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Cormorant Infant';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/assets/fonts/cormorant-infant-500-cyrillic-ext-97e050.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-/* cyrillic */
-@font-face {
-  font-family: 'Cormorant Infant';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/assets/fonts/cormorant-infant-500-cyrillic-3a2215.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-/* latin-ext */
-@font-face {
-  font-family: 'Cormorant Infant';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/assets/fonts/cormorant-infant-500-latin-ext-9eb70b.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-/* latin */
-@font-face {
-  font-family: 'Cormorant Infant';
-  font-style: normal;
-  font-weight: 700;
+  font-weight: 300 700;
   font-display: swap;
   src: url(/assets/fonts/cormorant-infant-500-latin-c0bcd9.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
@@ -236,7 +124,7 @@
 @font-face {
   font-family: 'Golos Text';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400 900;
   font-display: swap;
   src: url(/assets/fonts/golos-text-400-cyrillic-ext-b06cf9.woff2) format('woff2');
   unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
@@ -246,7 +134,7 @@
 @font-face {
   font-family: 'Golos Text';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400 900;
   font-display: swap;
   src: url(/assets/fonts/golos-text-400-cyrillic-721d01.woff2) format('woff2');
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
@@ -256,7 +144,7 @@
 @font-face {
   font-family: 'Golos Text';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400 900;
   font-display: swap;
   src: url(/assets/fonts/golos-text-400-latin-ext-52fc06.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
@@ -266,169 +154,9 @@
 @font-face {
   font-family: 'Golos Text';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400 900;
   font-display: swap;
   src: url(/assets/fonts/golos-text-400-latin-65c68b.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Golos Text';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/assets/fonts/golos-text-400-cyrillic-ext-b06cf9.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-/* cyrillic */
-@font-face {
-  font-family: 'Golos Text';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/assets/fonts/golos-text-400-cyrillic-721d01.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-/* latin-ext */
-@font-face {
-  font-family: 'Golos Text';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/assets/fonts/golos-text-400-latin-ext-52fc06.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-/* latin */
-@font-face {
-  font-family: 'Golos Text';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/assets/fonts/golos-text-400-latin-65c68b.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Golos Text';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/assets/fonts/golos-text-400-cyrillic-ext-b06cf9.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-/* cyrillic */
-@font-face {
-  font-family: 'Golos Text';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/assets/fonts/golos-text-400-cyrillic-721d01.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-/* latin-ext */
-@font-face {
-  font-family: 'Golos Text';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/assets/fonts/golos-text-400-latin-ext-52fc06.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-/* latin */
-@font-face {
-  font-family: 'Golos Text';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/assets/fonts/golos-text-400-latin-65c68b.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* cyrillic-ext */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/assets/fonts/jetbrains-mono-400-cyrillic-ext-982bf4.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-/* cyrillic */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/assets/fonts/jetbrains-mono-400-cyrillic-ffa6bb.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-/* latin-ext */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/assets/fonts/jetbrains-mono-400-latin-ext-76306e.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-/* latin */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/assets/fonts/jetbrains-mono-400-latin-1cd702.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* cyrillic-ext */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/assets/fonts/jetbrains-mono-400-cyrillic-ext-982bf4.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-/* cyrillic */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/assets/fonts/jetbrains-mono-400-cyrillic-ffa6bb.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-/* latin-ext */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/assets/fonts/jetbrains-mono-400-latin-ext-76306e.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-/* latin */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/assets/fonts/jetbrains-mono-400-latin-1cd702.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 </style>
@@ -454,7 +182,7 @@
 
   --f-text: 'Golos Text', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --f-serif: 'Cormorant Infant', 'Cormorant', Georgia, serif;
-  --f-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  --f-label: var(--f-text);
 
   --gap: clamp(10px, 1.6vw, 24px);
   --pad: clamp(20px, 3.4vw, 48px);
@@ -497,11 +225,11 @@ body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; 
 .title em { font-style: italic; font-weight: 500; }
 .title--md { font-size: clamp(34px, 3.4vw, 48px); }
 .title--sm { font-size: 28px; }
-.meta, .hours, .hero__links {
-  font-family: var(--f-mono);
+.meta, .hours {
+  font-family: var(--f-label);
   font-size: 13px;
-  letter-spacing: .06em;
-  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: .01em;
 }
 .meta { margin: 0; color: var(--muted); display: flex; align-items: center; gap: 10px; }
 .addr { display: inline-block; margin: 0; color: var(--red); font-size: 19px; font-weight: 500; text-decoration: none; }
@@ -514,9 +242,9 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
 
 .status { display: inline-flex; align-items: center; gap: 8px; color: var(--red); }
 .status::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
-.status.is-open { color: #4f7a2f; }
+.status.is-open { color: #426827; }
 
-/* ---------- кнопки (как штамп в меню: прямоугольник, моно, капс) ---------- */
+/* ---------- кнопки: основной шрифт из брендбука ---------- */
 .btns { display: flex; flex-wrap: wrap; gap: 8px; }
 .b {
   display: inline-flex;
@@ -529,11 +257,10 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
   border-radius: 4px;
   background: transparent;
   color: var(--red);
-  font-family: var(--f-mono);
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: .08em;
-  text-transform: uppercase;
+  font-family: var(--f-label);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .01em;
   text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
@@ -543,7 +270,7 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
 .b:hover { background: rgba(168, 52, 58, .08); }
 .b--fill { background: var(--red); color: var(--card); }
 .b--fill:hover { background: var(--red-dark); border-color: var(--red-dark); }
-.b--sm { min-height: 36px; padding: 0 14px; font-size: 12px; }
+.b--sm { min-height: 36px; padding: 0 14px; font-size: 13px; }
 .b--row { width: 100%; justify-content: flex-start; min-height: 54px; font-size: 14px; }
 .b--row svg { width: 20px; height: 20px; }
 
@@ -552,57 +279,29 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
 .window::after { content: ''; position: absolute; inset: 0; background: var(--grain); opacity: .22; mix-blend-mode: overlay; pointer-events: none; }
 .window--map::after { display: none; }
 
-/* ---------- первый экран ---------- */
-.hero {
-  display: grid;
-  grid-template-columns: minmax(340px, 1fr) 1.85fr;
-  min-height: calc(100svh - 2 * var(--gap));
-}
-.hero__info {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  padding: var(--pad);
-  border-right: 1px solid var(--line);
-}
-.hero__logo { margin: 0 0 4px; padding-bottom: 26px; border-bottom: 1px solid var(--line); display: flex; justify-content: center; }
-.hero__logo img { width: 100%; max-width: 440px; }
-.hero__phone { font-family: var(--f-serif); font-weight: 700; font-size: clamp(30px, 2.6vw, 40px); line-height: 1; text-decoration: none; letter-spacing: -.01em; margin-top: 6px; }
-.hero__phone:hover { color: var(--red); }
-.hero__motto { margin: auto 0 0; max-width: 12em; font-family: var(--f-serif); font-style: italic; font-weight: 500; font-size: clamp(32px, 2.9vw, 44px); line-height: 1.05; letter-spacing: -.01em; }
-.hero__text { margin: 0; max-width: 470px; font-size: 17px; line-height: 1.6; color: #3d342d; }
-.hero__links { margin: 0; display: flex; flex-wrap: wrap; gap: 6px 20px; color: var(--muted); }
-.hero__links a { text-decoration: none; }
-.hero__links a:hover { color: var(--ink); }
-.hero .btns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 420px; }
-/* невысокие экраны ноутбуков: кнопки должны помещаться на первом экране */
-@media (min-width: 981px) and (max-height: 820px) {
-  .hero__logo { padding-bottom: 18px; }
-  .hero__logo img { max-width: 280px; }
-  .hero__text { display: none; }
-}
+/* ---------- первый экран: атмосфера зала, сразу за ней меню ---------- */
+.hero { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 18px 28px; padding: 20px var(--pad); }
+.hero__logo { margin: 0; display: flex; }
+.hero__logo img { width: 150px; height: auto; }
+.hero .addr { grid-column: 2; grid-row: 1; justify-self: end; text-align: right; text-wrap: balance; }
+.hero__photos { grid-column: 1 / -1; grid-row: 2; list-style: none; margin: 0; padding: 0; display: flex; gap: 12px; min-width: 0; overflow: hidden; }
+.hero__photos li { flex: 1 1 0; min-width: 0; height: clamp(180px, 16vw, 240px); }
+.hero__photos .window { width: 100%; height: 100%; border-radius: 10px; }
+.hero__photos img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .6s; }
+.hero__photos .window:hover img { transform: scale(1.05); }
 .b { min-width: 0; }
-.hero__media { padding: var(--pad); display: flex; }
-.hero__media .window { flex: 1; }
-.hero__media .window img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-
-@media (max-width: 980px) {
-  .hero { grid-template-columns: minmax(0, 1fr); min-height: 0; }
-  .hero__info { display: contents; }
-  .hero > .hero__info > * { margin-left: var(--pad); margin-right: var(--pad); }
-  .hero__logo { order: 1; margin-top: var(--pad); }
-  /* на телефоне кнопки сразу под телефоном, чтобы их было видно без прокрутки */
-  .hero .addr { order: 2; margin-top: 10px; }
-  .hero .hours { order: 3; margin-top: 10px; }
-  .hero__phone { order: 4; margin-top: 12px; }
-  .hero .btns { order: 5; margin-top: 14px; }
-  .hero__media { order: 6; padding: 22px 12px 0; }
-  .hero__media .window { aspect-ratio: 4 / 3.3; }
-  .hero__motto { order: 7; margin-top: 22px; }
-  .hero__text { order: 8; margin-top: 10px; }
-  .hero__links { order: 9; margin-top: 16px; margin-bottom: var(--pad); }
-  .hero__logo img { max-width: 300px; }
-  .hero .btns { max-width: none; }
+@media (max-width: 860px) {
+  /* Компактная шапка оставляет в первом экране и фотографии, и начало меню. */
+  .hero { gap: 14px 18px; padding: 16px 0; }
+  .hero__logo { margin-left: var(--pad); }
+  .hero__logo img { width: 120px; }
+  .hero .addr { margin-right: var(--pad); max-width: 200px; font-size: 15px; line-height: 1.4; }
+  .hero__photos {
+    width: 100%; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory;
+    padding: 0 var(--pad); scroll-padding: 0 var(--pad); scrollbar-width: none;
+  }
+  .hero__photos::-webkit-scrollbar { display: none; }
+  .hero__photos li { flex: 0 0 min(44vw, 190px); height: auto; aspect-ratio: 9 / 10; scroll-snap-align: start; }
 }
 
 /* ---------- меню ---------- */
@@ -612,7 +311,8 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
 
 .menu__layout { display: grid; grid-template-columns: 230px 1fr; gap: 0 48px; }
 .menu__nav { position: sticky; top: 84px; align-self: start; display: grid; padding: 28px 0; }
-.menu__nav button {
+.menu__nav a {
+  text-decoration: none;
   display: flex;
   gap: 12px;
   align-items: baseline;
@@ -626,12 +326,16 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
   color: var(--muted);
   transition: color .15s;
 }
-.menu__nav button span { font-family: var(--f-mono); font-size: 12px; letter-spacing: .04em; }
-.menu__nav button:hover { color: var(--ink); }
-.menu__nav button.is-on { color: var(--red); font-weight: 600; }
+.menu__nav a span { font-family: var(--f-label); font-size: 12px; letter-spacing: .04em; }
+.menu__nav a:hover { color: var(--ink); }
+.menu__nav a.is-on { color: var(--red); font-weight: 600; }
 
 .menu__body { padding-top: 28px; min-height: 320px; }
-.cat { animation: fade .3s ease both; }
+.cat { scroll-margin-top: 100px; }
+.js .menu__body > .cat:not(.is-active) { display: none; }
+.js .cat.is-active { animation: fade .3s ease both; }
+html:not(.js) .menu__body > .cat + .cat { margin-top: 48px; }
+html:not(.js) [data-cookie-settings], html:not(.js) [data-copy-address], html:not(.js) .hours > div:has([data-status]) { display: none; }
 @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 .cat__head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 22px; margin-bottom: 26px; }
 .cat__title { margin: 0; font-family: var(--f-serif); font-weight: 700; font-size: clamp(32px, 3vw, 44px); line-height: 1; }
@@ -657,7 +361,7 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
 .photo--tall { width: min(860px, calc(100vw - 24px), calc((100dvh - 130px) * .9)); }
 .photo--tall .photo__img { aspect-ratio: 9 / 10; }
 @keyframes photo-in { from { opacity: 0; transform: scale(.97); } }
-.dish__name { margin: 0 0 6px; font-size: 15px; font-weight: 600; line-height: 1.3; text-transform: uppercase; letter-spacing: .02em; }
+.dish__name { margin: 0 0 6px; font-size: 16px; font-weight: 600; line-height: 1.4; }
 .dish__desc { margin: 0 0 12px; font-size: 14px; line-height: 1.55; color: var(--muted); }
 .dish__foot { margin-top: auto; display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-top: 10px; border-top: 1px dashed var(--line); }
 .dish--noimg { padding-top: 14px; border-top: 2px solid var(--ink); }
@@ -665,13 +369,13 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
 .w { font-family: var(--f-serif); font-style: italic; font-size: 17px; color: var(--muted); white-space: nowrap; }
 .price { font-family: var(--f-serif); font-style: italic; font-weight: 700; font-size: 25px; line-height: 1; white-space: nowrap; }
 .price small { font-size: .8em; font-weight: 700; }
-.price--ask { font-family: var(--f-mono); font-size: 12px; font-weight: 400; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+.price--ask { font-family: var(--f-label); font-size: 12px; font-weight: 400; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
 
 .seal {
   position: absolute; z-index: 1; top: 10px; left: 10px;
   padding: 5px 9px; border-radius: 3px;
   background: var(--red); color: var(--card);
-  font-family: var(--f-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
+  font-family: var(--f-label); font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
 }
 
 .list { columns: 2 340px; column-gap: 48px; }
@@ -680,6 +384,14 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
 .row__name { font-weight: 500; line-height: 1.35; }
 .row__desc { grid-column: 1 / -1; font-size: 14px; color: var(--muted); line-height: 1.45; }
 .row .price { font-size: 21px; }
+
+.cat__split { display: grid; grid-template-columns: minmax(260px, 1fr) minmax(0, 1.5fr); gap: 28px 48px; align-items: start; }
+.cat__split .grid { grid-template-columns: minmax(0, 1fr); }
+.cat__split .list--extra { margin-top: 0; columns: 1; }
+@media (max-width: 860px) {
+  .cat__split { grid-template-columns: minmax(0, 1fr); }
+  .cat__split .list--extra { margin-top: 0; }
+}
 
 .cat__cta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 36px; padding-top: 22px; border-top: 1px solid var(--line); }
 .cat__cta span { margin-right: auto; font-family: var(--f-serif); font-size: 24px; font-weight: 700; }
@@ -695,15 +407,15 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
     background: var(--card); border-bottom: 1px solid var(--line);
   }
   .menu__nav::-webkit-scrollbar { display: none; }
-  .menu__nav button { flex: none; padding: 7px 12px; border: 1.5px solid var(--line); border-radius: 4px; font-size: 14px; white-space: nowrap; }
-  .menu__nav button span { display: none; }
-  .menu__nav button.is-on { border-color: var(--red); background: var(--red); color: var(--card); }
+  .menu__nav a { flex: none; padding: 7px 12px; border: 1.5px solid var(--line); border-radius: 4px; font-size: 14px; white-space: nowrap; }
+  .menu__nav a span { display: none; }
+  .menu__nav a.is-on { border-color: var(--red); background: var(--red); color: var(--card); }
 }
 @media (max-width: 560px) {
   .grid { grid-template-columns: 1fr; gap: 14px; }
   .dish { display: grid; grid-template-columns: 116px minmax(0, 1fr); gap: 0 14px; }
   .dish .window { grid-row: span 3; align-self: start; aspect-ratio: 1 / 1; height: auto; margin: 0; }
-  .dish__name { font-size: 14px; align-self: start; overflow-wrap: anywhere; }
+  .dish__name { font-size: 15px; align-self: start; overflow-wrap: anywhere; }
   .dish__desc { align-self: start; font-size: 14px; margin-bottom: 8px; }
   .dish__foot { padding-top: 6px; flex-wrap: wrap; gap: 4px 12px; }
   .dish--noimg { grid-template-columns: 1fr; }
@@ -726,14 +438,20 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
 .about .meta { color: var(--muted); }
 .about .ornament { background: var(--terra); }
 .about__lead { margin: 0; max-width: 46ch; font-size: 19px; line-height: 1.6; }
+.about__motto {
+  margin: auto 0 0; padding-top: 22px; border-top: 1px solid var(--line);
+  font-family: var(--f-serif); font-style: italic; font-weight: 500;
+  font-size: clamp(28px, 2.6vw, 38px); line-height: 1.1; color: #e2a689;
+}
 .about__list { list-style: none; margin: 0; padding: var(--pad); display: grid; grid-template-columns: 1fr 1fr; gap: 34px 40px; align-content: center; }
 .about__list li { display: flex; flex-direction: column; gap: 8px; padding-top: 16px; border-top: 1px solid var(--line); }
-.about__num { font-family: var(--f-mono); font-size: 12px; letter-spacing: .06em; color: #e2a689; }
+.about__num { font-family: var(--f-label); font-size: 12px; letter-spacing: .06em; color: #e2a689; }
 .about__list h3 { margin: 0; font-family: var(--f-serif); font-size: 27px; font-weight: 700; line-height: 1.05; }
 .about__list p { margin: 0; color: var(--muted); font-size: 16px; line-height: 1.6; }
 @media (max-width: 980px) {
   .about { grid-template-columns: 1fr; }
   .about__intro { border-right: 0; }
+  .about__motto { margin-top: 4px; }
   .about__list { padding-top: 0; }
 }
 @media (max-width: 560px) {
@@ -765,7 +483,8 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
 .order__col { padding: var(--pad); display: flex; flex-direction: column; gap: 16px; }
 .order__col + .order__col { border-left: 1px solid var(--line); }
 .order__btns { grid-column: 1 / -1; display: flex; align-items: center; flex-wrap: wrap; gap: 12px 24px; padding: 22px var(--pad) var(--pad); border-top: 1px solid var(--line); }
-.order__ask { margin: 0 auto 0 0; font-family: var(--f-serif); font-size: 24px; font-weight: 700; }
+.order__ask { margin: 0 auto 0 0; font-family: var(--f-serif); font-size: 34px; font-weight: 700; line-height: 1; text-decoration: none; }
+.order__ask:hover { color: var(--red); }
 .order__text { margin: 0; max-width: 480px; color: #3d342d; font-size: 17px; line-height: 1.6; }
 .ornament {
   display: inline-block; width: 22px; aspect-ratio: 398 / 345; background: var(--red);
@@ -787,9 +506,9 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
 .window--map { flex: 1; align-self: center; aspect-ratio: 13 / 9; display: block; text-decoration: none; }
 .window--map img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .6s; }
 .window--map:hover img { transform: scale(1.02); }
-.map-tag { position: absolute; left: 16px; top: 16px; display: inline-flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 4px; background: var(--ink); color: var(--card); font-family: var(--f-mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; }
+.map-tag { position: absolute; left: 16px; top: 16px; display: inline-flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 4px; background: var(--ink); color: var(--card); font-family: var(--f-label); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; }
 .map-tag .ornament { width: 18px; }
-.map-open { position: absolute; right: 16px; top: 16px; padding: 10px 14px; border-radius: 4px; background: var(--red); color: var(--card); font-family: var(--f-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+.map-open { position: absolute; right: 16px; top: 16px; padding: 10px 14px; border-radius: 4px; background: var(--red); color: var(--card); font-family: var(--f-label); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
 
 @media (max-width: 980px) {
   .where { grid-template-columns: 1fr; }
@@ -805,7 +524,7 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
 .foot__logo { width: 220px; margin-bottom: 8px; }
 .foot__contacts { margin: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 28px; color: var(--cream); font-size: 16px; }
 .foot__contacts a { text-decoration: none; }
-.foot__links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 24px; padding: 18px 0; width: min(760px, 100%); border-top: 1px solid rgba(227, 220, 203, .14); border-bottom: 1px solid rgba(227, 220, 203, .14); font-family: var(--f-mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; }
+.foot__links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 24px; padding: 18px 0; width: min(760px, 100%); border-top: 1px solid rgba(227, 220, 203, .14); border-bottom: 1px solid rgba(227, 220, 203, .14); font-family: var(--f-label); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; }
 .foot__links a, .foot__links button { color: var(--cream); text-decoration: none; background: none; border: 0; padding: 0; cursor: pointer; font: inherit; letter-spacing: inherit; text-transform: inherit; }
 .foot__links a:hover, .foot__links button:hover { text-decoration: underline; text-underline-offset: 4px; }
 .foot__star { margin-left: -22px; color: var(--cream); }
@@ -830,9 +549,9 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
 .pill.is-shown { visibility: visible; transform: translate(-50%, 0); }
 .pill__logo { flex: none; }
 .pill__logo img { height: 26px; width: auto; margin-right: 10px; }
-.pill > a:not(.pill__logo):not(.pill__call) { padding: 8px 12px; font-family: var(--f-mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; text-decoration: none; opacity: .8; border-radius: 4px; white-space: nowrap; }
+.pill > a:not(.pill__logo):not(.pill__call) { padding: 8px 12px; font-family: var(--f-label); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; text-decoration: none; opacity: .8; border-radius: 4px; white-space: nowrap; }
 .pill > a:not(.pill__logo):not(.pill__call):hover { opacity: 1; background: rgba(227, 220, 203, .08); }
-.pill__call { display: inline-flex; align-items: center; gap: 8px; margin-left: 6px; padding: 9px 14px; border-radius: 4px; background: var(--red); color: var(--card); text-decoration: none; font-family: var(--f-mono); font-size: 13px; letter-spacing: .03em; white-space: nowrap; }
+.pill__call { display: inline-flex; align-items: center; gap: 8px; margin-left: 6px; padding: 9px 14px; border-radius: 4px; background: var(--red); color: var(--card); text-decoration: none; font-family: var(--f-label); font-size: 13px; letter-spacing: .03em; white-space: nowrap; }
 .pill__call svg { width: 15px; height: 15px; }
 @media (max-width: 860px) { .pill { display: none; } }
 
@@ -854,7 +573,7 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
   .dock__call, .dock__msg {
     display: flex; align-items: center; justify-content: center; gap: 8px;
     min-height: 50px; border-radius: 4px; border: 0; cursor: pointer; text-decoration: none;
-    font-family: var(--f-mono); font-size: 13px; letter-spacing: .08em; text-transform: uppercase;
+    font-family: var(--f-label); font-size: 13px; letter-spacing: .08em; text-transform: uppercase;
   }
   .dock svg { width: 18px; height: 18px; }
   .dock__call { background: var(--red); color: var(--card); }
@@ -879,7 +598,7 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
   .sheet__panel { width: 100%; border-radius: var(--r-card) var(--r-card) 0 0; padding-bottom: calc(22px + env(safe-area-inset-bottom)); transform: translateY(100%); opacity: 1; }
 }
 
-.toast { position: fixed; z-index: 120; left: 50%; bottom: 90px; transform: translateX(-50%); padding: 12px 18px; border-radius: 4px; background: var(--ink); color: var(--card); font-family: var(--f-mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; box-shadow: 0 8px 24px rgba(0, 0, 0, .3); }
+.toast { position: fixed; z-index: 120; left: 50%; bottom: 90px; transform: translateX(-50%); padding: 12px 18px; border-radius: 4px; background: var(--ink); color: var(--card); font-family: var(--f-label); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; box-shadow: 0 8px 24px rgba(0, 0, 0, .3); }
 
 /* ---------- уведомление о cookie ---------- */
 .cookie {
@@ -897,16 +616,17 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
 .cookie__title { font-family: var(--f-serif); font-size: 22px; font-weight: 700; line-height: 1.1; }
 .cookie__legal { margin-top: 4px !important; font-size: 12px; line-height: 1.45; color: var(--muted); }
 .cookie a { color: var(--red); }
+.cookie__details summary { cursor: pointer; width: fit-content; font-size: 12px; color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
 .cookie__btns { display: flex; gap: 8px; flex: none; }
 @media (max-width: 860px) {
-  .cookie { flex-direction: column; align-items: stretch; bottom: calc(80px + env(safe-area-inset-bottom)); max-height: calc(100dvh - 100px - env(safe-area-inset-bottom)); }
-  .cookie__btns .b { flex: 1; }
+  .cookie { flex-direction: column; align-items: stretch; gap: 12px; padding: 14px 16px; bottom: calc(12px + env(safe-area-inset-bottom)); max-height: calc(100dvh - 100px - env(safe-area-inset-bottom)); }
+  body:has(.dock.is-shown) .cookie { bottom: calc(80px + env(safe-area-inset-bottom)); }
+  .cookie__btns .b { flex: 1; min-height: 44px; padding: 8px; white-space: normal; font-size: 12px; line-height: 1.3; }
 }
-@media (max-width: 440px) { .cookie__btns { flex-direction: column; } }
 
 /* ---------- страница документа ---------- */
 .doc { padding: var(--pad); max-width: 860px; margin: 0 auto; width: 100%; }
-.doc__back { font-family: var(--f-mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); text-decoration: none; }
+.doc__back { font-family: var(--f-label); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); text-decoration: none; }
 .doc__back:hover { color: var(--ink); }
 .doc h1 { margin: 28px 0 8px; font-size: min(clamp(40px, 4.6vw, 64px), 8.8vw); overflow-wrap: anywhere; }
 .doc h2 { margin: 36px 0 10px; font-family: var(--f-serif); font-size: 30px; font-weight: 700; line-height: 1.1; }
@@ -931,32 +651,12 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
 .menu[data-tone="olive"] .b--fill { color: #3f4736; }
 .menu[data-tone="olive"] .b:hover { background: rgba(236, 233, 226, .1); }
 .menu[data-tone="olive"] .b--fill:hover { background: var(--red-dark); }
-.menu[data-tone="olive"] .menu__nav button.is-on { color: #3f4736; }
-@media (min-width: 861px) { .menu[data-tone="olive"] .menu__nav button.is-on { color: var(--ink); } }
+.menu[data-tone="olive"] .menu__nav a.is-on { color: #3f4736; }
+@media (min-width: 861px) { .menu[data-tone="olive"] .menu__nav a.is-on { color: var(--ink); } }
 </style>
 
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Restaurant",
-        "name": "Чё? Шашлык",
-        "url": "https://cheshashlik.ru/",
-        "servesCuisine": ["Кавказская кухня"],
-        "priceRange": "₽₽",
-        "telephone": "+79624990044",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "проспект Кирова, 27А",
-          "addressLocality": "Пятигорск",
-          "addressCountry": "RU"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 44.036037,
-          "longitude": 43.078323
-        },
-        "openingHours": "Mo-Su 11:00-24:00"
-      }
+{"@context":"https://schema.org","@type":"Restaurant","@id":"https://cheshashlik.ru/#restaurant","name":"Чё? Шашлык","url":"https://cheshashlik.ru/","image":"https://cheshashlik.ru/assets/img/hero/hero-1.jpg","logo":"https://cheshashlik.ru/assets/brand/logo-full-dark.png","servesCuisine":["Кавказская кухня"],"priceRange":"₽₽","telephone":"+79624990044","acceptsReservations":true,"address":{"@type":"PostalAddress","streetAddress":"проспект Кирова, 27А","addressLocality":"Пятигорск","addressRegion":"Ставропольский край","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":44.036037,"longitude":43.078323},"hasMap":"https://yandex.ru/maps/org/chyo_shashlyk_/30239245640/","sameAs":["https://yandex.ru/maps/org/chyo_shashlyk_/30239245640/","https://2gis.ru/pyatigorsk/firm/70000001109313094","https://t.me/che_shashlik"],"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"11:00","closes":"00:00"},"hasMenu":{"@type":"Menu","@id":"https://cheshashlik.ru/#menu","name":"Меню ресторана «Чё? Шашлык»","url":"https://cheshashlik.ru/#menu","inLanguage":"ru","hasMenuSection":[{"@type":"MenuSection","name":"Хлеб","url":"https://cheshashlik.ru/#menu-bread","hasMenuItem":[{"@type":"MenuItem","name":"Лепёшка кавказская с сыром и намазками","description":"Пышная лепёшка с копчёным сулугуни, пхали из фасоли, орехово-чесночным кремом и сацибели.","image":"https://cheshashlik.ru/assets/img/menu/lepeshka.jpg","offers":{"@type":"Offer","price":360,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Домашняя лепёшка","description":"Из дрожжевого теста с яйцом и мацони. Мягкая, слегка сливочная.","offers":{"@type":"Offer","price":90,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Тонкий лаваш","description":"Мягкий вкус и лёгкая хлебная сладость. Хорош к мясу, закускам и соусам.","offers":{"@type":"Offer","price":70,"priceCurrency":"RUB"}}]},{"@type":"MenuSection","name":"Холодные закуски","url":"https://cheshashlik.ru/#menu-cold","hasMenuItem":[{"@type":"MenuItem","name":"Ассорти пхали","description":"Пхали из свёклы, моркови и фасоли с грецким орехом, гранатом, кинзой и ореховым маслом.","image":"https://cheshashlik.ru/assets/img/menu/phali.jpg","offers":{"@type":"Offer","price":280,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Рулетики из баклажанов","description":"Баклажан с творожным сыром и мацони, чесночный соус, кинза, редис и ореховое масло.","image":"https://cheshashlik.ru/assets/img/menu/rulety.jpg","offers":{"@type":"Offer","price":290,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Сациви с цыплёнком","description":"Бедро цыплёнка с насыщенным ореховым соусом и ореховым маслом.","image":"https://cheshashlik.ru/assets/img/menu/satsivi.jpg","offers":{"@type":"Offer","price":380,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Аджапсандал","description":"Печёный баклажан, болгарский перец и помидор с чесночным маслом, красным луком, винным уксусом и зеленью.","image":"https://cheshashlik.ru/assets/img/menu/adzhapsandal.jpg","offers":{"@type":"Offer","price":340,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Буженина из индейки","description":"Филе индейки с орехово-чесночным соусом, трюфельным маслом, паприкой и зелёным луком.","image":"https://cheshashlik.ru/assets/img/menu/buzhenina.jpg","offers":{"@type":"Offer","price":480,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Лобио по-мегрельски","description":"Красная фасоль с грецким орехом, луком, аджикой, сливочным маслом и реганом. Подаётся тёплым.","image":"https://cheshashlik.ru/assets/img/menu/lobio.jpg","offers":{"@type":"Offer","price":270,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Кавказские сыры с чурчхелой","description":"Брынза, сулугуни и копчёный сулугуни с грецким орехом, чурчхелой и абрикосовым джемом.","image":"https://cheshashlik.ru/assets/img/menu/syry.jpg","offers":{"@type":"Offer","price":590,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Ассорти из домашних солений","description":"Красная капуста, свекольные огурцы, бочковой огурец и чеснок, перец цицак, малосольные томаты.","image":"https://cheshashlik.ru/assets/img/menu/solenya.jpg","offers":{"@type":"Offer","price":420,"priceCurrency":"RUB"}}]},{"@type":"MenuSection","name":"Салаты","url":"https://cheshashlik.ru/#menu-salads","hasMenuItem":[{"@type":"MenuItem","name":"Салат с хрустящим баклажаном","description":"Баклажан и розовые томаты с творожным сыром, сладким чили, чесночным маслом и наршарабом.","image":"https://cheshashlik.ru/assets/img/menu/baklazhan-salat.jpg","offers":{"@type":"Offer","price":470,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Табуле с булгуром","description":"Булгур, огурец и болгарский перец с мятой, кинзой, гранатом и лимонным соком.","image":"https://cheshashlik.ru/assets/img/menu/tabule.jpg","offers":{"@type":"Offer","price":390,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Салат Тбилиси с индейкой","description":"Филе индейки, фасоль, болгарский перец, красный лук, зелень и орехово-чесночный соус.","image":"https://cheshashlik.ru/assets/img/menu/tbilisi.jpg","offers":{"@type":"Offer","price":570,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Салат с молодым сыром","description":"Печёный перец и сыр чечил с миксом салата, свежих трав и грецким орехом.","image":"https://cheshashlik.ru/assets/img/menu/molodoy-syr.jpg","offers":{"@type":"Offer","price":430,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Салат по-грузински","description":"Огурец и розовые томаты с красным луком, зеленью, чили и ореховым соусом.","image":"https://cheshashlik.ru/assets/img/menu/gruzinski.jpg","offers":{"@type":"Offer","price":440,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Салат с томатами и тархуном","description":"Розовые томаты с красным луком, свежим тархуном, зелёной аджикой, наршарабом и гранатом.","image":"https://cheshashlik.ru/assets/img/menu/tomaty-tarhun.jpg","offers":{"@type":"Offer","price":380,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Салат из свежих овощей","description":"Огурец, розовые томаты и редис с зелёным луком и укропом. Оливковое масло или сметана на выбор.","image":"https://cheshashlik.ru/assets/img/menu/ovoshi.jpg","offers":{"@type":"Offer","price":360,"priceCurrency":"RUB"}}]},{"@type":"MenuSection","name":"Супы","url":"https://cheshashlik.ru/#menu-soups","hasMenuItem":[{"@type":"MenuItem","name":"Борщ с говядиной","description":"Томлёная свёкла, капуста, морковь в курином бульоне. К борщу подаём бородинский хлеб, копчёная грудинка, сметана и чеснок.","image":"https://cheshashlik.ru/assets/img/menu/borsch.jpg","offers":{"@type":"Offer","price":490,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Харчо","description":"Говядина и рис в курином бульоне с томатами, ткемали и чесноком.","image":"https://cheshashlik.ru/assets/img/menu/harcho.jpg","offers":{"@type":"Offer","price":450,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Чихиртма с цыплёнком","description":"Бедро цыплёнка в курином бульоне с яйцом, чесночным маслом и зеленью.","image":"https://cheshashlik.ru/assets/img/menu/chihirtma.jpg","offers":{"@type":"Offer","price":380,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Уха с форелью","description":"Форель, картофель, морковь и лук в рыбном бульоне со сливочным маслом и зеленью.","image":"https://cheshashlik.ru/assets/img/menu/uha.jpg","offers":{"@type":"Offer","price":470,"priceCurrency":"RUB"}}]},{"@type":"MenuSection","name":"Тесто","url":"https://cheshashlik.ru/#menu-dough","hasMenuItem":[{"@type":"MenuItem","name":"Хачапури по-аджарски","description":"Дрожжевое тесто с миксом сыров, яйцом, мацони и сливочным маслом.","image":"https://cheshashlik.ru/assets/img/menu/adzharski.jpg","offers":{"@type":"Offer","price":470,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Пирог с ягнёнком","description":"Начинка из баранины, лука, зелени и аджики со сливочным маслом.","image":"https://cheshashlik.ru/assets/img/menu/pirog-yagnenok.jpg","offers":{"@type":"Offer","price":520,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Хачапури по-мегрельски","description":"Дрожжевое тесто с яйцом, мацони, миксом сыров и румяной сырной корочкой.","image":"https://cheshashlik.ru/assets/img/menu/megrelski.jpg","offers":{"@type":"Offer","price":470,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Пирог с картофелем","description":"Картофель, микс сыров, сливочное масло и кондари.","image":"https://cheshashlik.ru/assets/img/menu/pirog-kartofel.jpg","offers":{"@type":"Offer","price":420,"priceCurrency":"RUB"}}]},{"@type":"MenuSection","name":"Горячие блюда","url":"https://cheshashlik.ru/#menu-hot","hasMenuItem":[{"@type":"MenuItem","name":"Цыплёнок чкмерули","description":"Цыплёнок в соусе из мацони, чеснока, укропа и аджики со сливочным маслом.","image":"https://cheshashlik.ru/assets/img/menu/chkmeruli.jpg","offers":{"@type":"Offer","price":790,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Жареный сулугуни с гранатовым бальзамиком","description":"Сулугуни в хрустящей панировке панко, гранатовый бальзамик и абрикосовый джем с тархуном.","image":"https://cheshashlik.ru/assets/img/menu/suluguni.jpg","offers":{"@type":"Offer","price":390,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Томлёный ягнёнок с булгуром","description":"Ягнёнок с булгуром и аджапсандалом, аджикой, чесночным маслом, наршарабом и зеленью.","image":"https://cheshashlik.ru/assets/img/menu/yagnenok-bulgur.jpg","offers":{"@type":"Offer","price":890,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Запечённые пельмени из трёх видов мяса","description":"Говядина, баранина и куриное бедро с луком, томатами, миксом сыров, яйцом и сливками.","image":"https://cheshashlik.ru/assets/img/menu/pelmeni.jpg"},{"@type":"MenuItem","name":"Хинкали","description":"На выбор: свинина и говядина, баранина или с домашним сыром.","image":"https://cheshashlik.ru/assets/img/menu/hinkali.jpg","offers":{"@type":"Offer","price":390,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Морепродукты чкмерули","description":"Креветка, кальмар и филе форели с чесночным маслом, мацони, аджикой и укропом.","image":"https://cheshashlik.ru/assets/img/menu/more-chkmeruli.jpg","offers":{"@type":"Offer","price":770,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Хрустящий цыплёнок","description":"Цыплёнок с томатами слабой соли, сливочным маслом, кинзой и укропом.","image":"https://cheshashlik.ru/assets/img/menu/hrust-cyplenok.jpg","offers":{"@type":"Offer","price":760,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Оджахури со свининой","description":"Свинина и картофель с томатами, чесночным и сливочным маслом, луком и зеленью.","image":"https://cheshashlik.ru/assets/img/menu/odzhahuri.jpg","offers":{"@type":"Offer","price":620,"priceCurrency":"RUB"}}]},{"@type":"MenuSection","name":"Гарниры","url":"https://cheshashlik.ru/#menu-sides","hasMenuItem":[{"@type":"MenuItem","name":"Шампиньоны запечённые с сулугуни","offers":{"@type":"Offer","price":380,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Шампиньоны на мангале","offers":{"@type":"Offer","price":360,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Картофель с салом","offers":{"@type":"Offer","price":250,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Баклажан на углях","offers":{"@type":"Offer","price":160,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Перец на углях","offers":{"@type":"Offer","price":160,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Помидор на углях","offers":{"@type":"Offer","price":160,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Кукуруза на углях","offers":{"@type":"Offer","price":320,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Булгур с томлёными овощами","offers":{"@type":"Offer","price":280,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Картофельное пюре","offers":{"@type":"Offer","price":260,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Картофель фри","offers":{"@type":"Offer","price":240,"priceCurrency":"RUB"}}]},{"@type":"MenuSection","name":"Соусы","url":"https://cheshashlik.ru/#menu-sauces","hasMenuItem":[{"@type":"MenuItem","name":"Абрикосовый","description":"Абрикосовое варенье с тархуном.","offers":{"@type":"Offer","price":120,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Наршараб","description":"Гранатовый, ярко кисло-сладкий.","offers":{"@type":"Offer","price":120,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Сальса из томатов","description":"Томаты, зелень, чеснок и лимонный сок.","offers":{"@type":"Offer","price":90,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Сацибели","description":"Кисло-сладкий томатный.","offers":{"@type":"Offer","price":90,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Ткемали","description":"Сливовый, с фруктовой кислинкой.","offers":{"@type":"Offer","price":120,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Острый томатный","description":"Томаты с аджикой и зеленью.","offers":{"@type":"Offer","price":90,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Чесночный","description":"Мацони с зеленью, чесноком и зелёной аджикой.","offers":{"@type":"Offer","price":90,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Ореховый","description":"Грецкий орех, лук, сливочное масло и аджика.","offers":{"@type":"Offer","price":120,"priceCurrency":"RUB"}}]},{"@type":"MenuSection","name":"Мангал","url":"https://cheshashlik.ru/#menu-mangal","hasMenuItem":[{"@type":"MenuItem","name":"Шашлык из корейки ягнёнка","description":"Сочное мясо у кости с выразительной корочкой. Кавказские травы, маринованный лук, малосольный помидор и тонкий лаваш.","image":"https://cheshashlik.ru/assets/img/menu/koreyka.jpg","offers":{"@type":"Offer","price":690,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Шашлык из свиной шеи","description":"Сочное мясо с естественной мягкостью, только соль и чёрный перец. Маринованный лук, травы, малосольный помидор, лаваш.","image":"https://cheshashlik.ru/assets/img/menu/sheya.jpg","offers":{"@type":"Offer","price":390,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Шашлык из мякоти ягнёнка","description":"Нежная мякоть с характерным насыщенным вкусом. Маринованный лук, кавказские травы, малосольный помидор, лаваш.","image":"https://cheshashlik.ru/assets/img/menu/myakot-yagnenka.jpg","offers":{"@type":"Offer","price":490,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Шашлык из говяжьей вырезки","description":"Чистый насыщенный вкус и мягкая сочность. Свежий контраст из лука, трав и малосольного помидора.","image":"https://cheshashlik.ru/assets/img/menu/vyrezka.jpg","offers":{"@type":"Offer","price":640,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Печень в сетке","description":"Говяжья печень в жировой сетке, сочная внутри, с тонкой румяной корочкой.","image":"https://cheshashlik.ru/assets/img/menu/pechen.jpg","offers":{"@type":"Offer","price":330,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Шашлык из куриных крыльев","description":"Румяная корочка снаружи и сочность внутри.","image":"https://cheshashlik.ru/assets/img/menu/krylya.jpg","offers":{"@type":"Offer","price":270,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Шашлык из цыплёнка","description":"Нежное мясо с сочным вкусом и румяной корочкой.","image":"https://cheshashlik.ru/assets/img/menu/cyplenok.jpg","offers":{"@type":"Offer","price":330,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Цыплёнок-корнишон на углях","description":"Целый цыплёнок-корнишон с нежным мясом и выразительным вкусом живого огня.","image":"https://cheshashlik.ru/assets/img/menu/kornishon.jpg","offers":{"@type":"Offer","price":790,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Шашлык из индейки","description":"Нежное филе с мягким, чистым вкусом и лёгкой сочностью.","image":"https://cheshashlik.ru/assets/img/menu/indeyka.jpg","offers":{"@type":"Offer","price":460,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Люля-кебаб из цыплёнка","description":"Мягкий мясной вкус и пряный аромат мангала.","image":"https://cheshashlik.ru/assets/img/menu/lyulya-cyplenok.jpg","offers":{"@type":"Offer","price":260,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Люля-кебаб из ягнёнка","description":"Насыщенный мясной вкус и характерная пряность баранины.","image":"https://cheshashlik.ru/assets/img/menu/lyulya-yagnenok.jpg","offers":{"@type":"Offer","price":330,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Люля-кебаб по-кавказски","description":"Свиная шея и говядина с луком, кориандром, сванской солью и чили, в жировой сетке.","image":"https://cheshashlik.ru/assets/img/menu/lyulya-kavkaz.jpg","offers":{"@type":"Offer","price":330,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Креветки на углях","description":"Нежный сладковатый вкус и лёгкий дымок живого огня. Свежий салат и лимон.","image":"https://cheshashlik.ru/assets/img/menu/krevetki.jpg","offers":{"@type":"Offer","price":670,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Кальмар на углях","description":"Чистый морской вкус и лёгкий аромат мангала. Свежий салат и лимон.","image":"https://cheshashlik.ru/assets/img/menu/kalmar.jpg","offers":{"@type":"Offer","price":470,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Форель на шампуре","description":"Целая форель с нежным вкусом, микс листового салата и лимон.","image":"https://cheshashlik.ru/assets/img/menu/forel.jpg","offers":{"@type":"Offer","price":760,"priceCurrency":"RUB"}},{"@type":"MenuItem","name":"Шашлык из сёмги","description":"Сливочная сочность рыбы, листовой салат, свежий огурец и лимон.","image":"https://cheshashlik.ru/assets/img/menu/semga.jpg","offers":{"@type":"Offer","price":630,"priceCurrency":"RUB"}}]}]}}
     </script>
   </head>
   <body>
@@ -1019,7 +719,8 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
     <nav class="pill" aria-label="Навигация">
       <a href="#top" class="pill__logo" aria-label="Наверх"
         ><img
-          src="/assets/brand/logo-light.png"
+          src="/assets/brand/logo-light-small.webp"
+          fetchpriority="low"
           alt="Чё? Шашлык"
           width="900"
           height="294"
@@ -1027,77 +728,129 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
       <a href="#menu">Меню</a>
       <a href="#order">Доставка и бронь</a>
       <a href="#map">Как добраться</a>
-      <a class="pill__call" data-phone-link href="#"
-        ><svg><use href="#i-phone" /></svg><span data-phone-text></span
+      <a href="tel:+79624990044" class="pill__call" data-phone-link
+        ><svg><use href="#i-phone" /></svg><span data-phone-text>+7 962 499-00-44</span
       ></a>
     </nav>
 
     <main class="page" id="top">
-      <!-- ============ ПЕРВЫЙ ЭКРАН ============ -->
+      <!-- ============ ШАПКА: логотип, фото зала, адрес. Сразу под ней меню, связь и часы ниже ============ -->
       <section class="card hero" aria-label="Чё? Шашлык">
-        <div class="hero__info">
-          <h1 class="hero__logo">
-            <img
-              src="/assets/brand/logo-full-dark.png"
-              alt="Чё? Шашлык, ресторан кавказской кухни"
-              width="900"
-              height="399"
-            />
-          </h1>
-          <a class="addr" href="#map" data-address-short-full></a>
-
-          <dl class="hours">
-            <div>
-              <dt>Ежедневно:</dt>
-              <dd>11:00–00:00</dd>
-            </div>
-            <div>
-              <dt>Сейчас:</dt>
-              <dd><span class="status" data-status></span></dd>
-            </div>
-          </dl>
-
-          <a class="hero__phone" data-phone-link href="#"
-            ><span data-phone-text></span
-          ></a>
-
-          <p class="hero__motto">Премиум по вкусу, честный по цене.</p>
-          <p class="hero__text">
-            Шашлык на живом огне, хинкали и кавказская кухня в центре
-            Пятигорска.
-          </p>
-
-          <div class="btns">
-            <a class="b b--fill" data-phone-link href="#"
-              ><svg><use href="#i-phone" /></svg>Позвонить</a
+        <h1 class="hero__logo">
+          <span class="sr-only">Чё? Шашлык — ресторан кавказской кухни в Пятигорске</span>
+          <img
+            src="/assets/brand/logo-full-dark-small.webp"
+            alt=""
+            width="900"
+            height="399"
+          />
+        </h1>
+        <ul class="hero__photos" aria-label="Интерьер ресторана">
+          <li>
+            <button
+              type="button"
+              class="window window--zoom"
+              data-full="/assets/img/interior/okno-vecher.jpg"
+              aria-label="Открыть фото: Вечерний зал у окна с видом на Спасский собор"
             >
-            <a class="b" data-wa="hello" href="#" target="_blank" rel="noopener"
-              ><svg><use href="#i-wa" /></svg>WhatsApp</a
+              <img decoding="async"
+                src="/assets/img/interior/okno-vecher-m.webp"
+                srcset="/assets/img/interior/okno-vecher-t.webp 216w, /assets/img/interior/okno-vecher-m.webp 432w, /assets/img/interior/okno-vecher-s.webp 648w"
+                sizes="(max-width: 430px) 44vw, (max-width: 860px) 190px, (max-width: 1680px) 15vw, 245px"
+                width="648"
+                height="720"
+                alt="Вечерний зал у окна с видом на Спасский собор"
+                fetchpriority="high"
+              />
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="window window--zoom"
+              data-full="/assets/img/interior/stol-kompaniya.jpg"
+              aria-label="Открыть фото: Длинный стол для большой компании"
             >
-            <a class="b" data-tg href="#" target="_blank" rel="noopener"
-              ><svg><use href="#i-tg" /></svg>Telegram</a
+              <img decoding="async"
+                src="/assets/img/interior/stol-kompaniya-m.webp"
+                srcset="/assets/img/interior/stol-kompaniya-t.webp 216w, /assets/img/interior/stol-kompaniya-m.webp 432w, /assets/img/interior/stol-kompaniya-s.webp 648w"
+                sizes="(max-width: 430px) 44vw, (max-width: 860px) 190px, (max-width: 1680px) 15vw, 245px"
+                width="648"
+                height="720"
+                alt="Длинный стол для большой компании"
+              />
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="window window--zoom"
+              data-full="/assets/img/interior/okno-sobor.jpg"
+              aria-label="Открыть фото: Вид из окна на Спасский собор"
             >
-            <a class="b" data-max href="#" target="_blank" rel="noopener"
-              ><svg><use href="#i-max" /></svg>MAX</a
+              <img loading="lazy" decoding="async" fetchpriority="low"
+                src="/assets/img/interior/okno-sobor-m.webp"
+                srcset="/assets/img/interior/okno-sobor-t.webp 216w, /assets/img/interior/okno-sobor-m.webp 432w, /assets/img/interior/okno-sobor-s.webp 648w"
+                sizes="(max-width: 430px) 44vw, (max-width: 860px) 190px, (max-width: 1680px) 15vw, 245px"
+                width="648"
+                height="720"
+                alt="Вид из окна на Спасский собор"
+              />
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="window window--zoom"
+              data-full="/assets/img/interior/divany.jpg"
+              aria-label="Открыть фото: Зал с бархатными диванами"
             >
-          </div>
-          <p class="hero__links">
-            <a href="#menu">Меню ↓</a><a href="#order">Доставка и бронь ↓</a
-            ><a href="#map">На карте ↓</a>
-          </p>
-        </div>
-
-        <div class="hero__media">
-          <div class="window">
-            <img
-              src="/assets/img/hero/hero-1.jpg"
-              width="1672"
-              height="941"
-              alt="Зал ресторана вечером: плетёные светильники, каменные колонны, гости за столами"
-              fetchpriority="high"
-            />
-          </div>
-        </div>
+              <img loading="lazy" decoding="async" fetchpriority="low"
+                src="/assets/img/interior/divany-m.webp"
+                srcset="/assets/img/interior/divany-t.webp 216w, /assets/img/interior/divany-m.webp 432w, /assets/img/interior/divany-s.webp 648w"
+                sizes="(max-width: 430px) 44vw, (max-width: 860px) 190px, (max-width: 1680px) 15vw, 245px"
+                width="648"
+                height="720"
+                alt="Зал с бархатными диванами"
+              />
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="window window--zoom"
+              data-full="/assets/img/interior/dekor.jpg"
+              aria-label="Открыть фото: Плетёные светильники и тарелки на стене"
+            >
+              <img loading="lazy" decoding="async" fetchpriority="low"
+                src="/assets/img/interior/dekor-m.webp"
+                srcset="/assets/img/interior/dekor-t.webp 216w, /assets/img/interior/dekor-m.webp 432w, /assets/img/interior/dekor-s.webp 648w"
+                sizes="(max-width: 430px) 44vw, (max-width: 860px) 190px, (max-width: 1680px) 15vw, 245px"
+                width="648"
+                height="720"
+                alt="Плетёные светильники и тарелки на стене"
+              />
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="window window--zoom"
+              data-full="/assets/img/interior/cvety.jpg"
+              aria-label="Открыть фото: Цветочная арка с подсветкой"
+            >
+              <img loading="lazy" decoding="async" fetchpriority="low"
+                src="/assets/img/interior/cvety-m.webp"
+                srcset="/assets/img/interior/cvety-t.webp 216w, /assets/img/interior/cvety-m.webp 432w, /assets/img/interior/cvety-s.webp 648w"
+                sizes="(max-width: 430px) 44vw, (max-width: 860px) 190px, (max-width: 1680px) 15vw, 245px"
+                width="648"
+                height="720"
+                alt="Цветочная арка с подсветкой"
+              />
+            </button>
+          </li>
+        </ul>
+        <a class="addr" href="#map" data-address-short-full>Пятигорск, пр. Кирова, 27А</a>
       </section>
 
       <!-- ============ МЕНЮ ============ -->
@@ -1118,8 +871,362 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
         </header>
 
         <div class="menu__layout">
-          <nav class="menu__nav" id="menu-nav" aria-label="Разделы меню"></nav>
-          <div class="menu__body" id="menu-body" aria-live="polite"></div>
+          <nav class="menu__nav" id="menu-nav" aria-label="Разделы меню"><!-- menu-nav:start -->
+<a href="#menu-bread" class="is-on" aria-current="true" data-cat="bread"><span>01</span>Хлеб</a>
+<a href="#menu-cold" class="" data-cat="cold"><span>02</span>Холодные закуски</a>
+<a href="#menu-salads" class="" data-cat="salads"><span>03</span>Салаты</a>
+<a href="#menu-soups" class="" data-cat="soups"><span>04</span>Супы</a>
+<a href="#menu-dough" class="" data-cat="dough"><span>05</span>Тесто</a>
+<a href="#menu-hot" class="" data-cat="hot"><span>06</span>Горячие блюда</a>
+<a href="#menu-sides" class="" data-cat="sides"><span>07</span>Гарниры</a>
+<a href="#menu-sauces" class="" data-cat="sauces"><span>08</span>Соусы</a>
+<a href="#menu-mangal" class="" data-cat="mangal"><span>09</span>Мангал</a>
+<!-- menu-nav:end --></nav>
+          <div class="menu__body" id="menu-body"><!-- menu-body:start -->
+<section class="cat is-active" id="menu-bread" data-category="bread" aria-labelledby="title-bread">
+  <div class="cat__head"><h3 class="cat__title" id="title-bread">Хлеб</h3></div>
+  <div class="cat__split"><div class="grid"><article class="dish">
+  <button type="button" class="window window--zoom" data-photo="lepeshka" aria-label="Открыть фото: Лепёшка кавказская с сыром и намазками"><img src="/assets/img/menu/lepeshka-640.webp" srcset="/assets/img/menu/lepeshka-320.webp 320w, /assets/img/menu/lepeshka-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Лепёшка кавказская с сыром и намазками" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Лепёшка кавказская с сыром и намазками</h4>
+  <p class="dish__desc">Пышная лепёшка с копчёным сулугуни, пхали из фасоли, орехово-чесночным кремом и сацибели.</p>
+  <div class="dish__foot"><span class="w">350 г</span><span class="price">360 <small>руб.</small></span></div>
+</article></div><div class="list list--extra"><div class="row"><span class="row__name">Домашняя лепёшка</span><span class="w">150 г</span><span class="price">90 <small>руб.</small></span><span class="row__desc">Из дрожжевого теста с яйцом и мацони. Мягкая, слегка сливочная.</span></div>
+<div class="row"><span class="row__name">Тонкий лаваш</span><span class="w">80 г</span><span class="price">70 <small>руб.</small></span><span class="row__desc">Мягкий вкус и лёгкая хлебная сладость. Хорош к мясу, закускам и соусам.</span></div></div></div>
+  <div class="cat__cta"><span>Заказать домой</span><a href="tel:+79624990044" class="b b--fill b--sm" data-phone-link><svg><use href="#i-phone" /></svg>Позвонить</a><a class="b b--sm" href="/#order" data-open-contacts><svg><use href="#i-chat" /></svg>Написать</a></div>
+</section>
+<section class="cat" id="menu-cold" data-category="cold" aria-labelledby="title-cold">
+  <div class="cat__head"><h3 class="cat__title" id="title-cold">Холодные закуски</h3></div>
+  <div class="grid"><article class="dish">
+  <button type="button" class="window window--zoom" data-photo="phali" aria-label="Открыть фото: Ассорти пхали"><img src="/assets/img/menu/phali-640.webp" srcset="/assets/img/menu/phali-320.webp 320w, /assets/img/menu/phali-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Ассорти пхали" width="667" height="667" loading="lazy" decoding="async"><span class="seal">Шеф советует</span></button>
+  <h4 class="dish__name">Ассорти пхали</h4>
+  <p class="dish__desc">Пхали из свёклы, моркови и фасоли с грецким орехом, гранатом, кинзой и ореховым маслом.</p>
+  <div class="dish__foot"><span class="w">170 г</span><span class="price">280 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="rulety" aria-label="Открыть фото: Рулетики из баклажанов"><img src="/assets/img/menu/rulety-640.webp" srcset="/assets/img/menu/rulety-320.webp 320w, /assets/img/menu/rulety-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Рулетики из баклажанов" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Рулетики из баклажанов</h4>
+  <p class="dish__desc">Баклажан с творожным сыром и мацони, чесночный соус, кинза, редис и ореховое масло.</p>
+  <div class="dish__foot"><span class="w">170 г</span><span class="price">290 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="satsivi" aria-label="Открыть фото: Сациви с цыплёнком"><img src="/assets/img/menu/satsivi-640.webp" srcset="/assets/img/menu/satsivi-320.webp 320w, /assets/img/menu/satsivi-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Сациви с цыплёнком" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Сациви с цыплёнком</h4>
+  <p class="dish__desc">Бедро цыплёнка с насыщенным ореховым соусом и ореховым маслом.</p>
+  <div class="dish__foot"><span class="w">230 г</span><span class="price">380 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="adzhapsandal" aria-label="Открыть фото: Аджапсандал"><img src="/assets/img/menu/adzhapsandal-640.webp" srcset="/assets/img/menu/adzhapsandal-320.webp 320w, /assets/img/menu/adzhapsandal-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Аджапсандал" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Аджапсандал</h4>
+  <p class="dish__desc">Печёный баклажан, болгарский перец и помидор с чесночным маслом, красным луком, винным уксусом и зеленью.</p>
+  <div class="dish__foot"><span class="w">200 г</span><span class="price">340 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="buzhenina" aria-label="Открыть фото: Буженина из индейки"><img src="/assets/img/menu/buzhenina-640.webp" srcset="/assets/img/menu/buzhenina-320.webp 320w, /assets/img/menu/buzhenina-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Буженина из индейки" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Буженина из индейки</h4>
+  <p class="dish__desc">Филе индейки с орехово-чесночным соусом, трюфельным маслом, паприкой и зелёным луком.</p>
+  <div class="dish__foot"><span class="w">200 г</span><span class="price">480 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="lobio" aria-label="Открыть фото: Лобио по-мегрельски"><img src="/assets/img/menu/lobio-640.webp" srcset="/assets/img/menu/lobio-320.webp 320w, /assets/img/menu/lobio-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Лобио по-мегрельски" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Лобио по-мегрельски</h4>
+  <p class="dish__desc">Красная фасоль с грецким орехом, луком, аджикой, сливочным маслом и реганом. Подаётся тёплым.</p>
+  <div class="dish__foot"><span class="w">300 г</span><span class="price">270 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="syry" aria-label="Открыть фото: Кавказские сыры с чурчхелой"><img src="/assets/img/menu/syry-640.webp" srcset="/assets/img/menu/syry-320.webp 320w, /assets/img/menu/syry-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Кавказские сыры с чурчхелой" width="667" height="667" loading="lazy" decoding="async"><span class="seal">Шеф советует</span></button>
+  <h4 class="dish__name">Кавказские сыры с чурчхелой</h4>
+  <p class="dish__desc">Брынза, сулугуни и копчёный сулугуни с грецким орехом, чурчхелой и абрикосовым джемом.</p>
+  <div class="dish__foot"><span class="w">300 г</span><span class="price">590 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="solenya" aria-label="Открыть фото: Ассорти из домашних солений"><img src="/assets/img/menu/solenya-640.webp" srcset="/assets/img/menu/solenya-320.webp 320w, /assets/img/menu/solenya-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Ассорти из домашних солений" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Ассорти из домашних солений</h4>
+  <p class="dish__desc">Красная капуста, свекольные огурцы, бочковой огурец и чеснок, перец цицак, малосольные томаты.</p>
+  <div class="dish__foot"><span class="w">350 г</span><span class="price">420 <small>руб.</small></span></div>
+</article></div>
+  <div class="cat__cta"><span>Заказать домой</span><a href="tel:+79624990044" class="b b--fill b--sm" data-phone-link><svg><use href="#i-phone" /></svg>Позвонить</a><a class="b b--sm" href="/#order" data-open-contacts><svg><use href="#i-chat" /></svg>Написать</a></div>
+</section>
+<section class="cat" id="menu-salads" data-category="salads" aria-labelledby="title-salads">
+  <div class="cat__head"><h3 class="cat__title" id="title-salads">Салаты</h3></div>
+  <div class="grid"><article class="dish">
+  <button type="button" class="window window--zoom" data-photo="baklazhan-salat" aria-label="Открыть фото: Салат с хрустящим баклажаном"><img src="/assets/img/menu/baklazhan-salat-640.webp" srcset="/assets/img/menu/baklazhan-salat-320.webp 320w, /assets/img/menu/baklazhan-salat-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Салат с хрустящим баклажаном" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Салат с хрустящим баклажаном</h4>
+  <p class="dish__desc">Баклажан и розовые томаты с творожным сыром, сладким чили, чесночным маслом и наршарабом.</p>
+  <div class="dish__foot"><span class="w">270 г</span><span class="price">470 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="tabule" aria-label="Открыть фото: Табуле с булгуром"><img src="/assets/img/menu/tabule-640.webp" srcset="/assets/img/menu/tabule-320.webp 320w, /assets/img/menu/tabule-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Табуле с булгуром" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Табуле с булгуром</h4>
+  <p class="dish__desc">Булгур, огурец и болгарский перец с мятой, кинзой, гранатом и лимонным соком.</p>
+  <div class="dish__foot"><span class="w">300 г</span><span class="price">390 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="tbilisi" aria-label="Открыть фото: Салат Тбилиси с индейкой"><img src="/assets/img/menu/tbilisi-640.webp" srcset="/assets/img/menu/tbilisi-320.webp 320w, /assets/img/menu/tbilisi-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Салат Тбилиси с индейкой" width="667" height="667" loading="lazy" decoding="async"><span class="seal">Шеф советует</span></button>
+  <h4 class="dish__name">Салат Тбилиси с индейкой</h4>
+  <p class="dish__desc">Филе индейки, фасоль, болгарский перец, красный лук, зелень и орехово-чесночный соус.</p>
+  <div class="dish__foot"><span class="w">260 г</span><span class="price">570 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="molodoy-syr" aria-label="Открыть фото: Салат с молодым сыром"><img src="/assets/img/menu/molodoy-syr-640.webp" srcset="/assets/img/menu/molodoy-syr-320.webp 320w, /assets/img/menu/molodoy-syr-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Салат с молодым сыром" width="667" height="667" loading="lazy" decoding="async"><span class="seal">Шеф советует</span></button>
+  <h4 class="dish__name">Салат с молодым сыром</h4>
+  <p class="dish__desc">Печёный перец и сыр чечил с миксом салата, свежих трав и грецким орехом.</p>
+  <div class="dish__foot"><span class="w">230 г</span><span class="price">430 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="gruzinski" aria-label="Открыть фото: Салат по-грузински"><img src="/assets/img/menu/gruzinski-640.webp" srcset="/assets/img/menu/gruzinski-320.webp 320w, /assets/img/menu/gruzinski-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Салат по-грузински" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Салат по-грузински</h4>
+  <p class="dish__desc">Огурец и розовые томаты с красным луком, зеленью, чили и ореховым соусом.</p>
+  <div class="dish__foot"><span class="w">350 г</span><span class="price">440 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="tomaty-tarhun" aria-label="Открыть фото: Салат с томатами и тархуном"><img src="/assets/img/menu/tomaty-tarhun-640.webp" srcset="/assets/img/menu/tomaty-tarhun-320.webp 320w, /assets/img/menu/tomaty-tarhun-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Салат с томатами и тархуном" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Салат с томатами и тархуном</h4>
+  <p class="dish__desc">Розовые томаты с красным луком, свежим тархуном, зелёной аджикой, наршарабом и гранатом.</p>
+  <div class="dish__foot"><span class="w">220 г</span><span class="price">380 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="ovoshi" aria-label="Открыть фото: Салат из свежих овощей"><img src="/assets/img/menu/ovoshi-640.webp" srcset="/assets/img/menu/ovoshi-320.webp 320w, /assets/img/menu/ovoshi-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Салат из свежих овощей" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Салат из свежих овощей</h4>
+  <p class="dish__desc">Огурец, розовые томаты и редис с зелёным луком и укропом. Оливковое масло или сметана на выбор.</p>
+  <div class="dish__foot"><span class="w">260 г</span><span class="price">360 <small>руб.</small></span></div>
+</article></div>
+  <div class="cat__cta"><span>Заказать домой</span><a href="tel:+79624990044" class="b b--fill b--sm" data-phone-link><svg><use href="#i-phone" /></svg>Позвонить</a><a class="b b--sm" href="/#order" data-open-contacts><svg><use href="#i-chat" /></svg>Написать</a></div>
+</section>
+<section class="cat" id="menu-soups" data-category="soups" aria-labelledby="title-soups">
+  <div class="cat__head"><h3 class="cat__title" id="title-soups">Супы</h3></div>
+  <div class="grid"><article class="dish">
+  <button type="button" class="window window--zoom" data-photo="borsch" aria-label="Открыть фото: Борщ с говядиной"><img src="/assets/img/menu/borsch-640.webp" srcset="/assets/img/menu/borsch-320.webp 320w, /assets/img/menu/borsch-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Борщ с говядиной" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Борщ с говядиной</h4>
+  <p class="dish__desc">Томлёная свёкла, капуста, морковь в курином бульоне. К борщу подаём бородинский хлеб, копчёная грудинка, сметана и чеснок.</p>
+  <div class="dish__foot"><span class="w">400/50/80 г</span><span class="price">490 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="harcho" aria-label="Открыть фото: Харчо"><img src="/assets/img/menu/harcho-640.webp" srcset="/assets/img/menu/harcho-320.webp 320w, /assets/img/menu/harcho-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Харчо" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Харчо</h4>
+  <p class="dish__desc">Говядина и рис в курином бульоне с томатами, ткемали и чесноком.</p>
+  <div class="dish__foot"><span class="w">400 г</span><span class="price">450 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="chihirtma" aria-label="Открыть фото: Чихиртма с цыплёнком"><img src="/assets/img/menu/chihirtma-640.webp" srcset="/assets/img/menu/chihirtma-320.webp 320w, /assets/img/menu/chihirtma-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Чихиртма с цыплёнком" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Чихиртма с цыплёнком</h4>
+  <p class="dish__desc">Бедро цыплёнка в курином бульоне с яйцом, чесночным маслом и зеленью.</p>
+  <div class="dish__foot"><span class="w">330 г</span><span class="price">380 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="uha" aria-label="Открыть фото: Уха с форелью"><img src="/assets/img/menu/uha-640.webp" srcset="/assets/img/menu/uha-320.webp 320w, /assets/img/menu/uha-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Уха с форелью" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Уха с форелью</h4>
+  <p class="dish__desc">Форель, картофель, морковь и лук в рыбном бульоне со сливочным маслом и зеленью.</p>
+  <div class="dish__foot"><span class="w">400 г</span><span class="price">470 <small>руб.</small></span></div>
+</article></div>
+  <div class="cat__cta"><span>Заказать домой</span><a href="tel:+79624990044" class="b b--fill b--sm" data-phone-link><svg><use href="#i-phone" /></svg>Позвонить</a><a class="b b--sm" href="/#order" data-open-contacts><svg><use href="#i-chat" /></svg>Написать</a></div>
+</section>
+<section class="cat" id="menu-dough" data-category="dough" aria-labelledby="title-dough">
+  <div class="cat__head"><h3 class="cat__title" id="title-dough">Тесто</h3></div>
+  <div class="grid"><article class="dish">
+  <button type="button" class="window window--zoom" data-photo="adzharski" aria-label="Открыть фото: Хачапури по-аджарски"><img src="/assets/img/menu/adzharski-640.webp" srcset="/assets/img/menu/adzharski-320.webp 320w, /assets/img/menu/adzharski-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Хачапури по-аджарски" width="667" height="667" loading="lazy" decoding="async"><span class="seal">Шеф советует</span></button>
+  <h4 class="dish__name">Хачапури по-аджарски</h4>
+  <p class="dish__desc">Дрожжевое тесто с миксом сыров, яйцом, мацони и сливочным маслом.</p>
+  <div class="dish__foot"><span class="w">330 г</span><span class="price">470 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="pirog-yagnenok" aria-label="Открыть фото: Пирог с ягнёнком"><img src="/assets/img/menu/pirog-yagnenok-640.webp" srcset="/assets/img/menu/pirog-yagnenok-320.webp 320w, /assets/img/menu/pirog-yagnenok-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Пирог с ягнёнком" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Пирог с ягнёнком</h4>
+  <p class="dish__desc">Начинка из баранины, лука, зелени и аджики со сливочным маслом.</p>
+  <div class="dish__foot"><span class="w">330 г</span><span class="price">520 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="megrelski" aria-label="Открыть фото: Хачапури по-мегрельски"><img src="/assets/img/menu/megrelski-640.webp" srcset="/assets/img/menu/megrelski-320.webp 320w, /assets/img/menu/megrelski-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Хачапури по-мегрельски" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Хачапури по-мегрельски</h4>
+  <p class="dish__desc">Дрожжевое тесто с яйцом, мацони, миксом сыров и румяной сырной корочкой.</p>
+  <div class="dish__foot"><span class="w">330 г</span><span class="price">470 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="pirog-kartofel" aria-label="Открыть фото: Пирог с картофелем"><img src="/assets/img/menu/pirog-kartofel-640.webp" srcset="/assets/img/menu/pirog-kartofel-320.webp 320w, /assets/img/menu/pirog-kartofel-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Пирог с картофелем" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Пирог с картофелем</h4>
+  <p class="dish__desc">Картофель, микс сыров, сливочное масло и кондари.</p>
+  <div class="dish__foot"><span class="w">330 г</span><span class="price">420 <small>руб.</small></span></div>
+</article></div>
+  <div class="cat__cta"><span>Заказать домой</span><a href="tel:+79624990044" class="b b--fill b--sm" data-phone-link><svg><use href="#i-phone" /></svg>Позвонить</a><a class="b b--sm" href="/#order" data-open-contacts><svg><use href="#i-chat" /></svg>Написать</a></div>
+</section>
+<section class="cat" id="menu-hot" data-category="hot" aria-labelledby="title-hot">
+  <div class="cat__head"><h3 class="cat__title" id="title-hot">Горячие блюда</h3></div>
+  <div class="grid"><article class="dish">
+  <button type="button" class="window window--zoom" data-photo="chkmeruli" aria-label="Открыть фото: Цыплёнок чкмерули"><img src="/assets/img/menu/chkmeruli-640.webp" srcset="/assets/img/menu/chkmeruli-320.webp 320w, /assets/img/menu/chkmeruli-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Цыплёнок чкмерули" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Цыплёнок чкмерули</h4>
+  <p class="dish__desc">Цыплёнок в соусе из мацони, чеснока, укропа и аджики со сливочным маслом.</p>
+  <div class="dish__foot"><span class="w">400 г</span><span class="price">790 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="suluguni" aria-label="Открыть фото: Жареный сулугуни с гранатовым бальзамиком"><img src="/assets/img/menu/suluguni-640.webp" srcset="/assets/img/menu/suluguni-320.webp 320w, /assets/img/menu/suluguni-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Жареный сулугуни с гранатовым бальзамиком" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Жареный сулугуни с гранатовым бальзамиком</h4>
+  <p class="dish__desc">Сулугуни в хрустящей панировке панко, гранатовый бальзамик и абрикосовый джем с тархуном.</p>
+  <div class="dish__foot"><span class="w">200 г</span><span class="price">390 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="yagnenok-bulgur" aria-label="Открыть фото: Томлёный ягнёнок с булгуром"><img src="/assets/img/menu/yagnenok-bulgur-640.webp" srcset="/assets/img/menu/yagnenok-bulgur-320.webp 320w, /assets/img/menu/yagnenok-bulgur-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Томлёный ягнёнок с булгуром" width="667" height="667" loading="lazy" decoding="async"><span class="seal">Шеф советует</span></button>
+  <h4 class="dish__name">Томлёный ягнёнок с булгуром</h4>
+  <p class="dish__desc">Ягнёнок с булгуром и аджапсандалом, аджикой, чесночным маслом, наршарабом и зеленью.</p>
+  <div class="dish__foot"><span class="w">350 г</span><span class="price">890 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="pelmeni" aria-label="Открыть фото: Запечённые пельмени из трёх видов мяса"><img src="/assets/img/menu/pelmeni-640.webp" srcset="/assets/img/menu/pelmeni-320.webp 320w, /assets/img/menu/pelmeni-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Запечённые пельмени из трёх видов мяса" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Запечённые пельмени из трёх видов мяса</h4>
+  <p class="dish__desc">Говядина, баранина и куриное бедро с луком, томатами, миксом сыров, яйцом и сливками.</p>
+  <div class="dish__foot"><span class="w">260 г</span><span class="price--ask">цену уточняйте</span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="hinkali" aria-label="Открыть фото: Хинкали"><img src="/assets/img/menu/hinkali-640.webp" srcset="/assets/img/menu/hinkali-320.webp 320w, /assets/img/menu/hinkali-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Хинкали" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Хинкали</h4>
+  <p class="dish__desc">На выбор: свинина и говядина, баранина или с домашним сыром.</p>
+  <div class="dish__foot"><span class="w">3 шт.</span><span class="price">390 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="more-chkmeruli" aria-label="Открыть фото: Морепродукты чкмерули"><img src="/assets/img/menu/more-chkmeruli-640.webp" srcset="/assets/img/menu/more-chkmeruli-320.webp 320w, /assets/img/menu/more-chkmeruli-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Морепродукты чкмерули" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Морепродукты чкмерули</h4>
+  <p class="dish__desc">Креветка, кальмар и филе форели с чесночным маслом, мацони, аджикой и укропом.</p>
+  <div class="dish__foot"><span class="w">260 г</span><span class="price">770 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="hrust-cyplenok" aria-label="Открыть фото: Хрустящий цыплёнок"><img src="/assets/img/menu/hrust-cyplenok-640.webp" srcset="/assets/img/menu/hrust-cyplenok-320.webp 320w, /assets/img/menu/hrust-cyplenok-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Хрустящий цыплёнок" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Хрустящий цыплёнок</h4>
+  <p class="dish__desc">Цыплёнок с томатами слабой соли, сливочным маслом, кинзой и укропом.</p>
+  <div class="dish__foot"><span class="w">370 г</span><span class="price">760 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="odzhahuri" aria-label="Открыть фото: Оджахури со свининой"><img src="/assets/img/menu/odzhahuri-640.webp" srcset="/assets/img/menu/odzhahuri-320.webp 320w, /assets/img/menu/odzhahuri-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Оджахури со свининой" width="667" height="667" loading="lazy" decoding="async"><span class="seal">Шеф советует</span></button>
+  <h4 class="dish__name">Оджахури со свининой</h4>
+  <p class="dish__desc">Свинина и картофель с томатами, чесночным и сливочным маслом, луком и зеленью.</p>
+  <div class="dish__foot"><span class="w">400 г</span><span class="price">620 <small>руб.</small></span></div>
+</article></div>
+  <div class="cat__cta"><span>Заказать домой</span><a href="tel:+79624990044" class="b b--fill b--sm" data-phone-link><svg><use href="#i-phone" /></svg>Позвонить</a><a class="b b--sm" href="/#order" data-open-contacts><svg><use href="#i-chat" /></svg>Написать</a></div>
+</section>
+<section class="cat" id="menu-sides" data-category="sides" aria-labelledby="title-sides">
+  <div class="cat__head"><h3 class="cat__title" id="title-sides">Гарниры</h3></div>
+  <div class="list"><div class="row"><span class="row__name">Шампиньоны запечённые с сулугуни</span><span class="w">150 г</span><span class="price">380 <small>руб.</small></span></div>
+<div class="row"><span class="row__name">Шампиньоны на мангале</span><span class="w">160 г</span><span class="price">360 <small>руб.</small></span></div>
+<div class="row"><span class="row__name">Картофель с салом</span><span class="w">170 г</span><span class="price">250 <small>руб.</small></span></div>
+<div class="row"><span class="row__name">Баклажан на углях</span><span class="w">за 100 г</span><span class="price">160 <small>руб.</small></span></div>
+<div class="row"><span class="row__name">Перец на углях</span><span class="w">за 100 г</span><span class="price">160 <small>руб.</small></span></div>
+<div class="row"><span class="row__name">Помидор на углях</span><span class="w">за 100 г</span><span class="price">160 <small>руб.</small></span></div>
+<div class="row"><span class="row__name">Кукуруза на углях</span><span class="w">180 г</span><span class="price">320 <small>руб.</small></span></div>
+<div class="row"><span class="row__name">Булгур с томлёными овощами</span><span class="w">180 г</span><span class="price">280 <small>руб.</small></span></div>
+<div class="row"><span class="row__name">Картофельное пюре</span><span class="w">150 г</span><span class="price">260 <small>руб.</small></span></div>
+<div class="row"><span class="row__name">Картофель фри</span><span class="w">140 г</span><span class="price">240 <small>руб.</small></span></div></div>
+  <div class="cat__cta"><span>Заказать домой</span><a href="tel:+79624990044" class="b b--fill b--sm" data-phone-link><svg><use href="#i-phone" /></svg>Позвонить</a><a class="b b--sm" href="/#order" data-open-contacts><svg><use href="#i-chat" /></svg>Написать</a></div>
+</section>
+<section class="cat" id="menu-sauces" data-category="sauces" aria-labelledby="title-sauces">
+  <div class="cat__head"><h3 class="cat__title" id="title-sauces">Соусы</h3></div>
+  <div class="list"><div class="row"><span class="row__name">Абрикосовый</span><span class="w">50 г</span><span class="price">120 <small>руб.</small></span><span class="row__desc">Абрикосовое варенье с тархуном.</span></div>
+<div class="row"><span class="row__name">Наршараб</span><span class="w">50 г</span><span class="price">120 <small>руб.</small></span><span class="row__desc">Гранатовый, ярко кисло-сладкий.</span></div>
+<div class="row"><span class="row__name">Сальса из томатов</span><span class="w">50 г</span><span class="price">90 <small>руб.</small></span><span class="row__desc">Томаты, зелень, чеснок и лимонный сок.</span></div>
+<div class="row"><span class="row__name">Сацибели</span><span class="w">50 г</span><span class="price">90 <small>руб.</small></span><span class="row__desc">Кисло-сладкий томатный.</span></div>
+<div class="row"><span class="row__name">Ткемали</span><span class="w">50 г</span><span class="price">120 <small>руб.</small></span><span class="row__desc">Сливовый, с фруктовой кислинкой.</span></div>
+<div class="row"><span class="row__name">Острый томатный</span><span class="w">50 г</span><span class="price">90 <small>руб.</small></span><span class="row__desc">Томаты с аджикой и зеленью.</span></div>
+<div class="row"><span class="row__name">Чесночный</span><span class="w">50 г</span><span class="price">90 <small>руб.</small></span><span class="row__desc">Мацони с зеленью, чесноком и зелёной аджикой.</span></div>
+<div class="row"><span class="row__name">Ореховый</span><span class="w">50 г</span><span class="price">120 <small>руб.</small></span><span class="row__desc">Грецкий орех, лук, сливочное масло и аджика.</span></div></div>
+  <div class="cat__cta"><span>Заказать домой</span><a href="tel:+79624990044" class="b b--fill b--sm" data-phone-link><svg><use href="#i-phone" /></svg>Позвонить</a><a class="b b--sm" href="/#order" data-open-contacts><svg><use href="#i-chat" /></svg>Написать</a></div>
+</section>
+<section class="cat" id="menu-mangal" data-category="mangal" aria-labelledby="title-mangal">
+  <div class="cat__head"><h3 class="cat__title" id="title-mangal">Мангал</h3><p class="cat__note">Цена в разделе указана за 100 г, минимальный заказ 200 г.</p></div>
+  <div class="grid"><article class="dish">
+  <button type="button" class="window window--zoom" data-photo="koreyka" aria-label="Открыть фото: Шашлык из корейки ягнёнка"><img src="/assets/img/menu/koreyka-640.webp" srcset="/assets/img/menu/koreyka-320.webp 320w, /assets/img/menu/koreyka-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Шашлык из корейки ягнёнка" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Шашлык из корейки ягнёнка</h4>
+  <p class="dish__desc">Сочное мясо у кости с выразительной корочкой. Кавказские травы, маринованный лук, малосольный помидор и тонкий лаваш.</p>
+  <div class="dish__foot"><span class="w">100/60 г</span><span class="price">690 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="sheya" aria-label="Открыть фото: Шашлык из свиной шеи"><img src="/assets/img/menu/sheya-640.webp" srcset="/assets/img/menu/sheya-320.webp 320w, /assets/img/menu/sheya-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Шашлык из свиной шеи" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Шашлык из свиной шеи</h4>
+  <p class="dish__desc">Сочное мясо с естественной мягкостью, только соль и чёрный перец. Маринованный лук, травы, малосольный помидор, лаваш.</p>
+  <div class="dish__foot"><span class="w">100/60 г</span><span class="price">390 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="myakot-yagnenka" aria-label="Открыть фото: Шашлык из мякоти ягнёнка"><img src="/assets/img/menu/myakot-yagnenka-640.webp" srcset="/assets/img/menu/myakot-yagnenka-320.webp 320w, /assets/img/menu/myakot-yagnenka-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Шашлык из мякоти ягнёнка" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Шашлык из мякоти ягнёнка</h4>
+  <p class="dish__desc">Нежная мякоть с характерным насыщенным вкусом. Маринованный лук, кавказские травы, малосольный помидор, лаваш.</p>
+  <div class="dish__foot"><span class="w">100/60 г</span><span class="price">490 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="vyrezka" aria-label="Открыть фото: Шашлык из говяжьей вырезки"><img src="/assets/img/menu/vyrezka-640.webp" srcset="/assets/img/menu/vyrezka-320.webp 320w, /assets/img/menu/vyrezka-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Шашлык из говяжьей вырезки" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Шашлык из говяжьей вырезки</h4>
+  <p class="dish__desc">Чистый насыщенный вкус и мягкая сочность. Свежий контраст из лука, трав и малосольного помидора.</p>
+  <div class="dish__foot"><span class="w">100/60 г</span><span class="price">640 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="pechen" aria-label="Открыть фото: Печень в сетке"><img src="/assets/img/menu/pechen-640.webp" srcset="/assets/img/menu/pechen-320.webp 320w, /assets/img/menu/pechen-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Печень в сетке" width="667" height="667" loading="lazy" decoding="async"><span class="seal">Шеф советует</span></button>
+  <h4 class="dish__name">Печень в сетке</h4>
+  <p class="dish__desc">Говяжья печень в жировой сетке, сочная внутри, с тонкой румяной корочкой.</p>
+  <div class="dish__foot"><span class="w">100/60 г</span><span class="price">330 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="krylya" aria-label="Открыть фото: Шашлык из куриных крыльев"><img src="/assets/img/menu/krylya-640.webp" srcset="/assets/img/menu/krylya-320.webp 320w, /assets/img/menu/krylya-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Шашлык из куриных крыльев" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Шашлык из куриных крыльев</h4>
+  <p class="dish__desc">Румяная корочка снаружи и сочность внутри.</p>
+  <div class="dish__foot"><span class="w">100/60 г</span><span class="price">270 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="cyplenok" aria-label="Открыть фото: Шашлык из цыплёнка"><img src="/assets/img/menu/cyplenok-640.webp" srcset="/assets/img/menu/cyplenok-320.webp 320w, /assets/img/menu/cyplenok-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Шашлык из цыплёнка" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Шашлык из цыплёнка</h4>
+  <p class="dish__desc">Нежное мясо с сочным вкусом и румяной корочкой.</p>
+  <div class="dish__foot"><span class="w">100/60 г</span><span class="price">330 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="kornishon" aria-label="Открыть фото: Цыплёнок-корнишон на углях"><img src="/assets/img/menu/kornishon-640.webp" srcset="/assets/img/menu/kornishon-320.webp 320w, /assets/img/menu/kornishon-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Цыплёнок-корнишон на углях" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Цыплёнок-корнишон на углях</h4>
+  <p class="dish__desc">Целый цыплёнок-корнишон с нежным мясом и выразительным вкусом живого огня.</p>
+  <div class="dish__foot"><span class="w">100/60 г</span><span class="price">790 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="indeyka" aria-label="Открыть фото: Шашлык из индейки"><img src="/assets/img/menu/indeyka-640.webp" srcset="/assets/img/menu/indeyka-320.webp 320w, /assets/img/menu/indeyka-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Шашлык из индейки" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Шашлык из индейки</h4>
+  <p class="dish__desc">Нежное филе с мягким, чистым вкусом и лёгкой сочностью.</p>
+  <div class="dish__foot"><span class="w">100/60 г</span><span class="price">460 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="lyulya-cyplenok" aria-label="Открыть фото: Люля-кебаб из цыплёнка"><img src="/assets/img/menu/lyulya-cyplenok-640.webp" srcset="/assets/img/menu/lyulya-cyplenok-320.webp 320w, /assets/img/menu/lyulya-cyplenok-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Люля-кебаб из цыплёнка" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Люля-кебаб из цыплёнка</h4>
+  <p class="dish__desc">Мягкий мясной вкус и пряный аромат мангала.</p>
+  <div class="dish__foot"><span class="w">100/60 г</span><span class="price">260 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="lyulya-yagnenok" aria-label="Открыть фото: Люля-кебаб из ягнёнка"><img src="/assets/img/menu/lyulya-yagnenok-640.webp" srcset="/assets/img/menu/lyulya-yagnenok-320.webp 320w, /assets/img/menu/lyulya-yagnenok-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Люля-кебаб из ягнёнка" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Люля-кебаб из ягнёнка</h4>
+  <p class="dish__desc">Насыщенный мясной вкус и характерная пряность баранины.</p>
+  <div class="dish__foot"><span class="w">100/60 г</span><span class="price">330 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="lyulya-kavkaz" aria-label="Открыть фото: Люля-кебаб по-кавказски"><img src="/assets/img/menu/lyulya-kavkaz-640.webp" srcset="/assets/img/menu/lyulya-kavkaz-320.webp 320w, /assets/img/menu/lyulya-kavkaz-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Люля-кебаб по-кавказски" width="667" height="667" loading="lazy" decoding="async"><span class="seal">Шеф советует</span></button>
+  <h4 class="dish__name">Люля-кебаб по-кавказски</h4>
+  <p class="dish__desc">Свиная шея и говядина с луком, кориандром, сванской солью и чили, в жировой сетке.</p>
+  <div class="dish__foot"><span class="w">100/60 г</span><span class="price">330 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="krevetki" aria-label="Открыть фото: Креветки на углях"><img src="/assets/img/menu/krevetki-640.webp" srcset="/assets/img/menu/krevetki-320.webp 320w, /assets/img/menu/krevetki-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Креветки на углях" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Креветки на углях</h4>
+  <p class="dish__desc">Нежный сладковатый вкус и лёгкий дымок живого огня. Свежий салат и лимон.</p>
+  <div class="dish__foot"><span class="w">100/60 г</span><span class="price">670 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="kalmar" aria-label="Открыть фото: Кальмар на углях"><img src="/assets/img/menu/kalmar-640.webp" srcset="/assets/img/menu/kalmar-320.webp 320w, /assets/img/menu/kalmar-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Кальмар на углях" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Кальмар на углях</h4>
+  <p class="dish__desc">Чистый морской вкус и лёгкий аромат мангала. Свежий салат и лимон.</p>
+  <div class="dish__foot"><span class="w">100/60 г</span><span class="price">470 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="forel" aria-label="Открыть фото: Форель на шампуре"><img src="/assets/img/menu/forel-640.webp" srcset="/assets/img/menu/forel-320.webp 320w, /assets/img/menu/forel-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Форель на шампуре" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Форель на шампуре</h4>
+  <p class="dish__desc">Целая форель с нежным вкусом, микс листового салата и лимон.</p>
+  <div class="dish__foot"><span class="w">1 шт.</span><span class="price">760 <small>руб.</small></span></div>
+</article>
+<article class="dish">
+  <button type="button" class="window window--zoom" data-photo="semga" aria-label="Открыть фото: Шашлык из сёмги"><img src="/assets/img/menu/semga-640.webp" srcset="/assets/img/menu/semga-320.webp 320w, /assets/img/menu/semga-640.webp 640w" sizes="(max-width: 560px) 116px, (max-width: 860px) calc(100vw - 80px), 400px" alt="Шашлык из сёмги" width="667" height="667" loading="lazy" decoding="async"></button>
+  <h4 class="dish__name">Шашлык из сёмги</h4>
+  <p class="dish__desc">Сливочная сочность рыбы, листовой салат, свежий огурец и лимон.</p>
+  <div class="dish__foot"><span class="w">100/60 г</span><span class="price">630 <small>руб.</small></span></div>
+</article></div>
+  <div class="cat__cta"><span>Заказать домой</span><a href="tel:+79624990044" class="b b--fill b--sm" data-phone-link><svg><use href="#i-phone" /></svg>Позвонить</a><a class="b b--sm" href="/#order" data-open-contacts><svg><use href="#i-chat" /></svg>Написать</a></div>
+</section>
+<!-- menu-body:end --></div>
         </div>
         <p class="menu__foot">
           Если у вас аллергия на какой-то продукт, скажите об этом при заказе,
@@ -1127,6 +1234,322 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
           Цены иногда меняются, точную сумму назовёт администратор. <br />На
           фото блюда сняты для меню, в жизни подача может немного отличаться.
         </p>
+      </section>
+
+      <!-- ============ ДОСТАВКА И БРОНЬ ============ -->
+      <section class="card order" id="order" aria-labelledby="order-title">
+        <h2 id="order-title" class="sr-only">Доставка и бронь</h2>
+        <article class="order__col">
+          <p class="meta">
+            <span class="ornament" aria-hidden="true"></span>01 · Доставка и
+            самовывоз
+          </p>
+          <h3 class="title title--md">Заказать <em>домой</em></h3>
+          <p class="order__text">
+            Привезём шашлык, хачапури и всё, что есть в меню. Доставляем только
+            по Пятигорску. Можно и забрать самим с Кирова, 27А. Сколько стоит
+            доставка и когда приедет курьер, скажет администратор.
+          </p>
+        </article>
+        <article class="order__col">
+          <p class="meta">
+            <span class="ornament" aria-hidden="true"></span>02 · Бронь стола
+          </p>
+          <h3 class="title title--md">Забронировать <em>стол</em></h3>
+          <p class="order__text">
+            Посадим у окна, поближе к сцене или за большой стол, если вас много.
+            <br />
+            Банкет или день рождения лучше обсудить по телефону.
+          </p>
+        </article>
+        <div class="order__btns">
+          <a href="tel:+79624990044" class="order__ask" data-phone-link
+            ><span data-phone-text>+7 962 499-00-44</span
+          ></a>
+          <div class="btns">
+            <a href="tel:+79624990044" class="b b--fill" data-phone-link
+              ><svg><use href="#i-phone" /></svg>Позвонить</a
+            >
+            <a href="https://wa.me/79624990044?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!" class="b" data-wa="hello" target="_blank" rel="noopener"
+              ><svg><use href="#i-wa" /></svg>WhatsApp</a
+            >
+            <a href="https://t.me/che_shashlik" class="b" data-tg target="_blank" rel="noopener"
+              ><svg><use href="#i-tg" /></svg>Telegram</a
+            >
+            <a href="https://max.ru/u/f9LHodD0cOJk5PfOJ17g-RiKk7h7qEadSUoC2X9kvgjHrePDrhTh9YJaDyo" class="b" data-max target="_blank" rel="noopener"
+              ><svg><use href="#i-max" /></svg>MAX</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ИНТЕРЬЕР ============ -->
+      <section
+        class="card interior"
+        id="interior"
+        aria-labelledby="interior-title"
+      >
+        <header class="interior__head">
+          <h2 id="interior-title" class="title">Интерьер</h2>
+          <p class="meta">
+            <span class="ornament" aria-hidden="true"></span>Зал на проспекте
+            Кирова, 27А
+          </p>
+        </header>
+        <ul class="gallery">
+          <li class="gallery__item gallery__item--big">
+            <button
+              type="button"
+              class="window window--zoom"
+              data-full="/assets/img/interior/okno-vecher.jpg"
+              aria-label="Открыть фото: Вечерний зал у окна с видом на Спасский собор"
+            >
+              <img
+                src="/assets/img/interior/okno-vecher-s.webp"
+                srcset="
+                  /assets/img/interior/okno-vecher-s.webp  648w,
+                  /assets/img/interior/okno-vecher.jpg   1152w
+                "
+                sizes="(max-width: 860px) 72vw, 25vw"
+                width="648"
+                height="720"
+                alt="Вечерний зал у окна с видом на Спасский собор"
+                loading="lazy"
+              />
+            </button>
+          </li>
+          <li class="gallery__item">
+            <button
+              type="button"
+              class="window window--zoom"
+              data-full="/assets/img/interior/stol-kompaniya.jpg"
+              aria-label="Открыть фото: Длинный стол для большой компании"
+            >
+              <img
+                src="/assets/img/interior/stol-kompaniya-s.webp"
+                srcset="
+                  /assets/img/interior/stol-kompaniya-s.webp  648w,
+                  /assets/img/interior/stol-kompaniya.jpg   1152w
+                "
+                sizes="(max-width: 860px) 72vw, 25vw"
+                width="648"
+                height="720"
+                alt="Длинный стол для большой компании"
+                loading="lazy"
+              />
+            </button>
+          </li>
+          <li class="gallery__item">
+            <button
+              type="button"
+              class="window window--zoom"
+              data-full="/assets/img/interior/dekor.jpg"
+              aria-label="Открыть фото: Плетёные светильники и тарелки на стене"
+            >
+              <img
+                src="/assets/img/interior/dekor-s.webp"
+                srcset="
+                  /assets/img/interior/dekor-s.webp  648w,
+                  /assets/img/interior/dekor.jpg   1152w
+                "
+                sizes="(max-width: 860px) 72vw, 25vw"
+                width="648"
+                height="720"
+                alt="Плетёные светильники и тарелки на стене"
+                loading="lazy"
+              />
+            </button>
+          </li>
+          <li class="gallery__item">
+            <button
+              type="button"
+              class="window window--zoom"
+              data-full="/assets/img/interior/okno-sobor.jpg"
+              aria-label="Открыть фото: Вид из окна на Спасский собор"
+            >
+              <img
+                src="/assets/img/interior/okno-sobor-s.webp"
+                srcset="
+                  /assets/img/interior/okno-sobor-s.webp  648w,
+                  /assets/img/interior/okno-sobor.jpg   1152w
+                "
+                sizes="(max-width: 860px) 72vw, 25vw"
+                width="648"
+                height="720"
+                alt="Вид из окна на Спасский собор"
+                loading="lazy"
+              />
+            </button>
+          </li>
+          <li class="gallery__item">
+            <button
+              type="button"
+              class="window window--zoom"
+              data-full="/assets/img/interior/zal-okno.jpg"
+              aria-label="Открыть фото: Столы у большого арочного окна"
+            >
+              <img
+                src="/assets/img/interior/zal-okno-s.webp"
+                srcset="
+                  /assets/img/interior/zal-okno-s.webp  648w,
+                  /assets/img/interior/zal-okno.jpg   1152w
+                "
+                sizes="(max-width: 860px) 72vw, 25vw"
+                width="648"
+                height="720"
+                alt="Столы у большого арочного окна"
+                loading="lazy"
+              />
+            </button>
+          </li>
+          <li class="gallery__item gallery__item--wide">
+            <button
+              type="button"
+              class="window window--zoom"
+              data-full="/assets/img/interior/divany.jpg"
+              aria-label="Открыть фото: Зал с бархатными диванами"
+            >
+              <img
+                src="/assets/img/interior/divany-s.webp"
+                srcset="
+                  /assets/img/interior/divany-s.webp  648w,
+                  /assets/img/interior/divany.jpg   1152w
+                "
+                sizes="(max-width: 860px) 72vw, 25vw"
+                width="648"
+                height="720"
+                alt="Зал с бархатными диванами"
+                loading="lazy"
+              />
+            </button>
+          </li>
+          <li class="gallery__item">
+            <button
+              type="button"
+              class="window window--zoom"
+              data-full="/assets/img/interior/zal.jpg"
+              aria-label="Открыть фото: Сервированные столы в зале"
+            >
+              <img
+                src="/assets/img/interior/zal-s.webp"
+                srcset="
+                  /assets/img/interior/zal-s.webp  648w,
+                  /assets/img/interior/zal.jpg   1152w
+                "
+                sizes="(max-width: 860px) 72vw, 25vw"
+                width="648"
+                height="720"
+                alt="Сервированные столы в зале"
+                loading="lazy"
+              />
+            </button>
+          </li>
+          <li class="gallery__item">
+            <button
+              type="button"
+              class="window window--zoom"
+              data-full="/assets/img/interior/cvety.jpg"
+              aria-label="Открыть фото: Цветочная арка с подсветкой"
+            >
+              <img
+                src="/assets/img/interior/cvety-s.webp"
+                srcset="
+                  /assets/img/interior/cvety-s.webp  648w,
+                  /assets/img/interior/cvety.jpg   1152w
+                "
+                sizes="(max-width: 860px) 72vw, 25vw"
+                width="648"
+                height="720"
+                alt="Цветочная арка с подсветкой"
+                loading="lazy"
+              />
+            </button>
+          </li>
+          <li class="gallery__item">
+            <button
+              type="button"
+              class="window window--zoom"
+              data-full="/assets/img/interior/divan.jpg"
+              aria-label="Открыть фото: Стол у бархатного дивана"
+            >
+              <img
+                src="/assets/img/interior/divan-s.webp"
+                srcset="
+                  /assets/img/interior/divan-s.webp  648w,
+                  /assets/img/interior/divan.jpg   1152w
+                "
+                sizes="(max-width: 860px) 72vw, 25vw"
+                width="648"
+                height="720"
+                alt="Стол у бархатного дивана"
+                loading="lazy"
+              />
+            </button>
+          </li>
+          <li class="gallery__item">
+            <button
+              type="button"
+              class="window window--zoom"
+              data-full="/assets/img/interior/zerkalo.jpg"
+              aria-label="Открыть фото: Зеркало с подсветкой и плетёные тарелки на стене"
+            >
+              <img
+                src="/assets/img/interior/zerkalo-s.webp"
+                srcset="
+                  /assets/img/interior/zerkalo-s.webp  648w,
+                  /assets/img/interior/zerkalo.jpg   1152w
+                "
+                sizes="(max-width: 860px) 72vw, 25vw"
+                width="648"
+                height="720"
+                alt="Зеркало с подсветкой и плетёные тарелки на стене"
+                loading="lazy"
+              />
+            </button>
+          </li>
+          <li class="gallery__item">
+            <button
+              type="button"
+              class="window window--zoom"
+              data-full="/assets/img/interior/vhod.jpg"
+              aria-label="Открыть фото: Вход в ресторан: вывеска «Чё? Шашлык» с цветами"
+            >
+              <img
+                src="/assets/img/interior/vhod-s.webp"
+                srcset="
+                  /assets/img/interior/vhod-s.webp  648w,
+                  /assets/img/interior/vhod.jpg   1152w
+                "
+                sizes="(max-width: 860px) 72vw, 25vw"
+                width="648"
+                height="720"
+                alt="Вход в ресторан: вывеска «Чё? Шашлык» с цветами"
+                loading="lazy"
+              />
+            </button>
+          </li>
+          <li class="gallery__item">
+            <button
+              type="button"
+              class="window window--zoom"
+              data-full="/assets/img/interior/umyvalnik.jpg"
+              aria-label="Открыть фото: Умывальник с зеркалом в подсветке"
+            >
+              <img
+                src="/assets/img/interior/umyvalnik-s.webp"
+                srcset="
+                  /assets/img/interior/umyvalnik-s.webp  648w,
+                  /assets/img/interior/umyvalnik.jpg   1152w
+                "
+                sizes="(max-width: 860px) 72vw, 25vw"
+                width="648"
+                height="720"
+                alt="Умывальник с зеркалом в подсветке"
+                loading="lazy"
+              />
+            </button>
+          </li>
+        </ul>
       </section>
 
       <!-- ============ О РЕСТОРАНЕ ============ -->
@@ -1144,6 +1567,7 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
             Сочный мангал, хинкали и кавказская кухня в уютном ресторане для
             семьи и компаний.
           </p>
+          <p class="about__motto">Премиум по вкусу, честный по цене.</p>
         </div>
         <ol class="about__list">
           <li>
@@ -1180,304 +1604,11 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
         </ol>
       </section>
 
-      <!-- ============ ИНТЕРЬЕР ============ -->
-      <section
-        class="card interior"
-        id="interior"
-        aria-labelledby="interior-title"
-      >
-        <header class="interior__head">
-          <h2 id="interior-title" class="title">Интерьер</h2>
-          <p class="meta">
-            <span class="ornament" aria-hidden="true"></span>Зал на проспекте
-            Кирова, 27А
-          </p>
-        </header>
-        <ul class="gallery">
-          <li class="gallery__item gallery__item--big">
-            <button
-              type="button"
-              class="window window--zoom"
-              data-full="/assets/img/interior/okno-vecher.jpg"
-              aria-label="Открыть фото: Вечерний зал у окна с видом на Спасский собор"
-            >
-              <img
-                src="/assets/img/interior/okno-vecher-s.jpg"
-                srcset="
-                  /assets/img/interior/okno-vecher-s.jpg  648w,
-                  /assets/img/interior/okno-vecher.jpg   1152w
-                "
-                sizes="(max-width: 860px) 72vw, 25vw"
-                width="648"
-                height="720"
-                alt="Вечерний зал у окна с видом на Спасский собор"
-                loading="lazy"
-              />
-            </button>
-          </li>
-          <li class="gallery__item">
-            <button
-              type="button"
-              class="window window--zoom"
-              data-full="/assets/img/interior/zal-okno.jpg"
-              aria-label="Открыть фото: Столы у большого арочного окна"
-            >
-              <img
-                src="/assets/img/interior/zal-okno-s.jpg"
-                srcset="
-                  /assets/img/interior/zal-okno-s.jpg  648w,
-                  /assets/img/interior/zal-okno.jpg   1152w
-                "
-                sizes="(max-width: 860px) 72vw, 25vw"
-                width="648"
-                height="720"
-                alt="Столы у большого арочного окна"
-                loading="lazy"
-              />
-            </button>
-          </li>
-          <li class="gallery__item">
-            <button
-              type="button"
-              class="window window--zoom"
-              data-full="/assets/img/interior/dekor.jpg"
-              aria-label="Открыть фото: Плетёные светильники и тарелки на стене"
-            >
-              <img
-                src="/assets/img/interior/dekor-s.jpg"
-                srcset="
-                  /assets/img/interior/dekor-s.jpg  648w,
-                  /assets/img/interior/dekor.jpg   1152w
-                "
-                sizes="(max-width: 860px) 72vw, 25vw"
-                width="648"
-                height="720"
-                alt="Плетёные светильники и тарелки на стене"
-                loading="lazy"
-              />
-            </button>
-          </li>
-          <li class="gallery__item">
-            <button
-              type="button"
-              class="window window--zoom"
-              data-full="/assets/img/interior/okno-sobor.jpg"
-              aria-label="Открыть фото: Вид из окна на Спасский собор"
-            >
-              <img
-                src="/assets/img/interior/okno-sobor-s.jpg"
-                srcset="
-                  /assets/img/interior/okno-sobor-s.jpg  648w,
-                  /assets/img/interior/okno-sobor.jpg   1152w
-                "
-                sizes="(max-width: 860px) 72vw, 25vw"
-                width="648"
-                height="720"
-                alt="Вид из окна на Спасский собор"
-                loading="lazy"
-              />
-            </button>
-          </li>
-          <li class="gallery__item">
-            <button
-              type="button"
-              class="window window--zoom"
-              data-full="/assets/img/interior/zerkalo.jpg"
-              aria-label="Открыть фото: Зеркало с подсветкой и плетёные тарелки на стене"
-            >
-              <img
-                src="/assets/img/interior/zerkalo-s.jpg"
-                srcset="
-                  /assets/img/interior/zerkalo-s.jpg  648w,
-                  /assets/img/interior/zerkalo.jpg   1152w
-                "
-                sizes="(max-width: 860px) 72vw, 25vw"
-                width="648"
-                height="720"
-                alt="Зеркало с подсветкой и плетёные тарелки на стене"
-                loading="lazy"
-              />
-            </button>
-          </li>
-          <li class="gallery__item gallery__item--wide">
-            <button
-              type="button"
-              class="window window--zoom"
-              data-full="/assets/img/interior/divany.jpg"
-              aria-label="Открыть фото: Зал с бархатными диванами"
-            >
-              <img
-                src="/assets/img/interior/divany-s.jpg"
-                srcset="
-                  /assets/img/interior/divany-s.jpg  648w,
-                  /assets/img/interior/divany.jpg   1152w
-                "
-                sizes="(max-width: 860px) 72vw, 25vw"
-                width="648"
-                height="720"
-                alt="Зал с бархатными диванами"
-                loading="lazy"
-              />
-            </button>
-          </li>
-          <li class="gallery__item">
-            <button
-              type="button"
-              class="window window--zoom"
-              data-full="/assets/img/interior/zal.jpg"
-              aria-label="Открыть фото: Сервированные столы в зале"
-            >
-              <img
-                src="/assets/img/interior/zal-s.jpg"
-                srcset="
-                  /assets/img/interior/zal-s.jpg  648w,
-                  /assets/img/interior/zal.jpg   1152w
-                "
-                sizes="(max-width: 860px) 72vw, 25vw"
-                width="648"
-                height="720"
-                alt="Сервированные столы в зале"
-                loading="lazy"
-              />
-            </button>
-          </li>
-          <li class="gallery__item">
-            <button
-              type="button"
-              class="window window--zoom"
-              data-full="/assets/img/interior/cvety.jpg"
-              aria-label="Открыть фото: Цветочная арка с подсветкой"
-            >
-              <img
-                src="/assets/img/interior/cvety-s.jpg"
-                srcset="
-                  /assets/img/interior/cvety-s.jpg  648w,
-                  /assets/img/interior/cvety.jpg   1152w
-                "
-                sizes="(max-width: 860px) 72vw, 25vw"
-                width="648"
-                height="720"
-                alt="Цветочная арка с подсветкой"
-                loading="lazy"
-              />
-            </button>
-          </li>
-          <li class="gallery__item gallery__item--wide">
-            <button
-              type="button"
-              class="window window--zoom"
-              data-full="/assets/img/interior/divan.jpg"
-              aria-label="Открыть фото: Стол у бархатного дивана"
-            >
-              <img
-                src="/assets/img/interior/divan-s.jpg"
-                srcset="
-                  /assets/img/interior/divan-s.jpg  648w,
-                  /assets/img/interior/divan.jpg   1152w
-                "
-                sizes="(max-width: 860px) 72vw, 25vw"
-                width="648"
-                height="720"
-                alt="Стол у бархатного дивана"
-                loading="lazy"
-              />
-            </button>
-          </li>
-          <li class="gallery__item">
-            <button
-              type="button"
-              class="window window--zoom"
-              data-full="/assets/img/interior/vhod.jpg"
-              aria-label="Открыть фото: Вход в ресторан: вывеска «Чё? Шашлык» с цветами"
-            >
-              <img
-                src="/assets/img/interior/vhod-s.jpg"
-                srcset="
-                  /assets/img/interior/vhod-s.jpg  648w,
-                  /assets/img/interior/vhod.jpg   1152w
-                "
-                sizes="(max-width: 860px) 72vw, 25vw"
-                width="648"
-                height="720"
-                alt="Вход в ресторан: вывеска «Чё? Шашлык» с цветами"
-                loading="lazy"
-              />
-            </button>
-          </li>
-          <li class="gallery__item">
-            <button
-              type="button"
-              class="window window--zoom"
-              data-full="/assets/img/interior/umyvalnik.jpg"
-              aria-label="Открыть фото: Умывальник с зеркалом в подсветке"
-            >
-              <img
-                src="/assets/img/interior/umyvalnik-s.jpg"
-                srcset="
-                  /assets/img/interior/umyvalnik-s.jpg  648w,
-                  /assets/img/interior/umyvalnik.jpg   1152w
-                "
-                sizes="(max-width: 860px) 72vw, 25vw"
-                width="648"
-                height="720"
-                alt="Умывальник с зеркалом в подсветке"
-                loading="lazy"
-              />
-            </button>
-          </li>
-        </ul>
-      </section>
-
-      <!-- ============ ДОСТАВКА И БРОНЬ ============ -->
-      <section class="card order" id="order" aria-labelledby="order-title">
-        <h2 id="order-title" class="sr-only">Доставка и бронь</h2>
-        <article class="order__col">
-          <p class="meta">
-            <span class="ornament" aria-hidden="true"></span>01 · Доставка и
-            самовывоз
-          </p>
-          <h3 class="title title--md">Заказать <em>домой</em></h3>
-          <p class="order__text">
-            Привезём шашлык, хачапури и всё, что есть в меню. Доставляем только
-            по Пятигорску. Можно и забрать самим с Кирова, 27А. Сколько стоит
-            доставка и когда приедет курьер, скажет администратор.
-          </p>
-        </article>
-        <article class="order__col">
-          <p class="meta">
-            <span class="ornament" aria-hidden="true"></span>02 · Бронь стола
-          </p>
-          <h3 class="title title--md">Забронировать <em>стол</em></h3>
-          <p class="order__text">
-            Посадим у окна, поближе к сцене или за большой стол, если вас много.
-            <br />
-            Банкет или день рождения лучше обсудить по телефону.
-          </p>
-        </article>
-        <div class="order__btns">
-          <p class="order__ask">Позвонить или написать</p>
-          <div class="btns">
-            <a class="b b--fill" data-phone-link href="#"
-              ><svg><use href="#i-phone" /></svg>Позвонить</a
-            >
-            <a class="b" data-wa="hello" href="#" target="_blank" rel="noopener"
-              ><svg><use href="#i-wa" /></svg>WhatsApp</a
-            >
-            <a class="b" data-tg href="#" target="_blank" rel="noopener"
-              ><svg><use href="#i-tg" /></svg>Telegram</a
-            >
-            <a class="b" data-max href="#" target="_blank" rel="noopener"
-              ><svg><use href="#i-max" /></svg>MAX</a
-            >
-          </div>
-        </div>
-      </section>
-
       <!-- ============ КАРТА ============ -->
       <section class="card where" id="map" aria-labelledby="map-title">
         <div class="where__info">
           <h2 id="map-title" class="title">Как добраться</h2>
-          <p class="addr" data-address></p>
+          <p class="addr" data-address>Пятигорск, проспект Кирова, 27А</p>
           <dl class="hours">
             <div>
               <dt>Ежедневно:</dt>
@@ -1485,12 +1616,12 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
             </div>
             <div>
               <dt>Сейчас:</dt>
-              <dd><span class="status" data-status></span></dd>
+              <dd><span class="status" data-status>11:00–00:00</span></dd>
             </div>
             <div>
               <dt>Телефон:</dt>
               <dd>
-                <a data-phone-link href="#"><span data-phone-text></span></a>
+                <a href="tel:+79624990044" data-phone-link><span data-phone-text>+7 962 499-00-44</span></a>
               </dd>
             </div>
           </dl>
@@ -1499,28 +1630,29 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
             «Маршрут» откроет Яндекс Карты с дорогой до нас.
           </p>
           <div class="btns">
-            <a class="b b--fill" data-route target="_blank" rel="noopener"
+            <a href="https://yandex.ru/maps/?rtext=~44.036037,43.078323&amp;rtt=auto" class="b b--fill" data-route target="_blank" rel="noopener"
               >Маршрут</a
             >
-            <a class="b" data-yandex target="_blank" rel="noopener"
+            <a href="https://yandex.ru/maps/org/chyo_shashlyk_/30239245640/" class="b" data-yandex target="_blank" rel="noopener"
               >Яндекс Карты</a
             >
-            <a class="b" data-2gis target="_blank" rel="noopener">2ГИС</a>
+            <a href="https://2gis.ru/pyatigorsk/firm/70000001109313094" class="b" data-2gis target="_blank" rel="noopener">2ГИС</a>
             <button class="b" type="button" data-copy-address>
               Скопировать адрес
             </button>
           </div>
         </div>
         <div class="where__media">
-          <a
+          <a href="https://yandex.ru/maps/org/chyo_shashlyk_/30239245640/"
             class="window window--map"
             data-yandex
             target="_blank"
             rel="noopener"
-            aria-label="Открыть «Чё? Шашлык» в Яндекс Картах"
           >
-            <img
+            <img src="https://static-maps.yandex.ru/1.x/?ll=43.078323,44.036037&amp;z=16&amp;size=650,450&amp;l=map&amp;pt=43.078323,44.036037,pm2rdl&amp;lang=ru_RU"
               data-static-map
+              crossorigin="anonymous"
+              referrerpolicy="no-referrer"
               width="650"
               height="450"
               alt="Карта центра Пятигорска: «Чё? Шашлык» на проспекте Кирова, 27А, рядом со Спасским собором"
@@ -1538,25 +1670,29 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
       <footer class="foot">
         <img
           class="foot__logo"
-          src="/assets/brand/logo-full-light.png"
+          src="/assets/brand/logo-full-light-small.webp"
           alt="Чё? Шашлык, ресторан кавказской кухни"
           width="900"
           height="399"
           loading="lazy"
         />
         <p class="foot__contacts">
-          <span data-address></span>
-          <a data-phone-link href="#"><span data-phone-text></span></a>
+          <span data-address>Пятигорск, проспект Кирова, 27А</span>
+          <a href="tel:+79624990044" data-phone-link><span data-phone-text>+7 962 499-00-44</span></a>
           <span>Ежедневно 11:00–00:00</span>
         </p>
         <nav class="foot__links" aria-label="Документы и соцсети">
+          <a href="/#menu">Меню</a>
+          <a href="/#order">Доставка и бронь</a>
+          <a href="/#interior">Интерьер</a>
+          <a href="/#map">Контакты</a>
           <a href="/privacy.html">Политика конфиденциальности</a>
           <a href="/privacy.html#cookie">Использование cookie</a>
           <button type="button" data-cookie-settings>Настройки cookie</button>
-          <a data-instagram target="_blank" rel="noopener"></a
+          <a href="https://instagram.com/che_shashlik.26" data-instagram target="_blank" rel="noopener">Instagram @che_shashlik.26</a
           ><span class="foot__star">*</span>
         </nav>
-        <p class="foot__legal"><span data-legal></span></p>
+        <p class="foot__legal"><span data-legal>ИП Егоян Лиана Давидовна · ИНН 263217153001 · ОГРНИП 326265100107094</span></p>
         <p class="foot__legal">
           * Instagram принадлежит компании Meta, признанной экстремистской
           организацией и запрещённой в РФ.
@@ -1574,7 +1710,7 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
 
     <!-- нижняя панель на телефоне -->
     <nav class="dock" aria-label="Быстрая связь">
-      <a class="dock__call" data-phone-link href="#"
+      <a href="tel:+79624990044" class="dock__call" data-phone-link
         ><svg><use href="#i-phone" /></svg>Позвонить</a
       >
       <button class="dock__msg" type="button" data-open-contacts>
@@ -1605,23 +1741,22 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
           </button>
         </div>
         <div class="sheet__list">
-          <a
+          <a href="https://wa.me/79624990044?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!"
             class="b b--row"
             data-wa="hello"
-            href="#"
             target="_blank"
             rel="noopener"
             ><svg><use href="#i-wa" /></svg>WhatsApp</a
           >
-          <a class="b b--row" data-tg href="#" target="_blank" rel="noopener"
+          <a href="https://t.me/che_shashlik" class="b b--row" data-tg target="_blank" rel="noopener"
             ><svg><use href="#i-tg" /></svg>Telegram</a
           >
-          <a class="b b--row" data-max href="#" target="_blank" rel="noopener"
+          <a href="https://max.ru/u/f9LHodD0cOJk5PfOJ17g-RiKk7h7qEadSUoC2X9kvgjHrePDrhTh9YJaDyo" class="b b--row" data-max target="_blank" rel="noopener"
             ><svg><use href="#i-max" /></svg>MAX</a
           >
-          <a class="b b--row b--fill" data-phone-link href="#"
+          <a href="tel:+79624990044" class="b b--row b--fill" data-phone-link
             ><svg><use href="#i-phone" /></svg>Позвонить
-            <span data-phone-text></span
+            <span data-phone-text>+7 962 499-00-44</span
           ></a>
         </div>
       </div>
@@ -1629,7 +1764,7 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
 
     <div
       class="cookie"
-      id="cookie"
+      id="cookie-banner"
       role="region"
       aria-label="Уведомление об использовании cookie"
       hidden
@@ -1637,16 +1772,18 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
       <div class="cookie__text">
         <p class="cookie__title">Сайт использует cookie</p>
         <p>
-          Это нужно Яндекс Метрике, чтобы мы видели, как гости пользуются
-          сайтом.
+          Яндекс Метрика помогает нам улучшать сайт.
         </p>
-        <p class="cookie__legal">
+        <details class="cookie__details">
+          <summary>Подробнее об обработке данных</summary>
+          <p class="cookie__legal">
           Нажимая «Принять», вы соглашаетесь, что ИП Егоян Л. Д. обрабатывает
           cookie, IP-адрес и данные о действиях на сайте с помощью Яндекс
           Метрики по
           <a href="/privacy.html#cookie">политике конфиденциальности</a>.
           Передумать можно в «Настройках cookie» внизу страницы.
-        </p>
+          </p>
+        </details>
       </div>
       <div class="cookie__btns">
         <button type="button" class="b b--fill b--sm" data-cookie="yes">
@@ -1669,9 +1806,10 @@ a.addr:hover { text-decoration: underline; text-underline-offset: 4px; }
 
     <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
-    <script src="/assets/js/typo.js?v=229a3034"></script>
-    <script src="/assets/js/config.js?v=b12c1a59"></script>
-    <script src="/assets/js/menu-data.js?v=d0c0e57b"></script>
-    <script src="/assets/js/app.js?v=7de5e57b"></script>
+    <script defer src="/assets/js/typo.js?v=229a3034"></script>
+    <script defer src="/assets/js/config.js?v=d01b347e"></script>
+    <script defer src="/assets/js/menu-data.js?v=d0c0e57b"></script>
+    <script defer src="/assets/js/analytics.js?v=62db1379"></script>
+    <script defer src="/assets/js/app.js?v=ff63c2f7"></script>
   </body>
 </html>

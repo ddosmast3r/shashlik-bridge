@@ -1,6 +1,8 @@
-# Единые правила для всех роботов, включая Googlebot и YandexBot.
-# CSS, JS и изображения открыты специально — без них поисковики не отрендерят страницы.
 User-agent: *
 Allow: /
+
+User-agent: Yandex
+Allow: /
+Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term&yclid&gclid&fbclid /
 
 Sitemap: https://cheshashlik.ru/sitemap.xml

@@ -14,9 +14,9 @@ import { dirname, join, posix } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
-const pages = ['index.html', 'privacy.html'];
+const pages = ['index.html', 'privacy.html', '404.html'];
 const link = /<link rel="stylesheet" href="(\/assets\/[^"]+\.css)"\s*\/?>/g;
-const script = /<script src="(\/assets\/[^"?]+\.js)(?:\?v=[^"]*)?"><\/script>/g;
+const script = /<script (defer )?src="(\/assets\/[^"?]+\.js)(?:\?v=[^"]*)?"><\/script>/g;
 
 for (const page of pages) {
   const file = join(root, page);
@@ -32,10 +32,10 @@ for (const page of pages) {
         .trim();
       return `<style>\n${body}\n</style>`;
     })
-    .replace(script, (_, src) => {
+    .replace(script, (_, defer = '', src) => {
       js++;
       const v = createHash('md5').update(readFileSync(join(root, src))).digest('hex').slice(0, 8);
-      return `<script src="${src}?v=${v}"></script>`;
+      return `<script ${defer}src="${src}?v=${v}"></script>`;
     });
   writeFileSync(file, out);
   console.log(`${page}: встроено стилей — ${css}, скриптов с версией — ${js}`);
