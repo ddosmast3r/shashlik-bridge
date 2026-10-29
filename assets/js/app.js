@@ -172,7 +172,7 @@
 
   /* ---------- окно «Написать нам» ---------- */
   const sheet = $('#contacts');
-  const sheetBackground = $$('.page, .pill, .dock');
+  const sheetBackground = $$('.page, .pill, .dock, #cookie-banner');
   let lastFocus = null;
   let sheetOpen = false;
   let sheetCloseTimer;

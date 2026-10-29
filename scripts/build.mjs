@@ -14,7 +14,7 @@ import { dirname, join, posix } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
-const pages = ['index.html', '404.html'];
+const pages = ['index.html', 'privacy.html', '404.html'];
 const link = /<link rel="stylesheet" href="(\/assets\/[^"]+\.css)"\s*\/?>/g;
 const script = /<script (defer )?src="(\/assets\/[^"?]+\.js)(?:\?v=[^"]*)?"><\/script>/g;
 

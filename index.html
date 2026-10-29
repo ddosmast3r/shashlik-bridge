@@ -211,7 +211,7 @@ button { font: inherit; color: inherit; }
 [hidden] { display: none !important; }
 /* удобочитаемость: аккуратные переносы, без «висящих» слов */
 p, li, dd, .dish__desc, .row__desc { text-wrap: pretty; }
-h1, h2, h3, .title, .cat__title { text-wrap: balance; }
+h1, h2, h3, .title, .cat__title, .cookie__title { text-wrap: balance; }
 .dish__name { text-wrap: pretty; }
 [data-phone-text], .w, .price { white-space: nowrap; }
 body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
@@ -376,7 +376,7 @@ a.addr:hover .addr__street { text-decoration: underline; text-decoration-thickne
 .js .menu__body > .cat:not(.is-active) { display: none; }
 .js .cat.is-active { animation: fade .3s ease both; }
 html:not(.js) .menu__body > .cat + .cat { margin-top: 48px; }
-html:not(.js) [data-copy-address], html:not(.js) .hours > div:has([data-status]) { display: none; }
+html:not(.js) [data-cookie-settings], html:not(.js) [data-copy-address], html:not(.js) .hours > div:has([data-status]) { display: none; }
 @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 .cat__head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 22px; margin-bottom: 26px; }
 .cat__title { margin: 0; font-family: var(--f-serif); font-weight: 700; font-size: clamp(32px, 3vw, 44px); line-height: 1; }
@@ -659,6 +659,30 @@ html:not(.js) [data-copy-address], html:not(.js) .hours > div:has([data-status])
 }
 
 .toast { position: fixed; z-index: 120; left: 50%; bottom: 90px; transform: translateX(-50%); padding: 12px 18px; border-radius: 4px; background: var(--ink); color: var(--card); font-family: var(--f-label); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; box-shadow: 0 8px 24px rgba(0, 0, 0, .3); }
+
+/* ---------- уведомление о cookie ---------- */
+.cookie {
+  position: fixed; z-index: 90; left: 50%; bottom: 20px; transform: translateX(-50%);
+  width: min(720px, calc(100% - 24px));
+  display: flex; align-items: center; gap: 16px 24px;
+  padding: 18px 20px; border-radius: 10px;
+  background: var(--card); color: var(--ink);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, .35);
+  font-size: 14px; line-height: 1.5;
+  max-height: calc(100dvh - 40px); overflow-y: auto;
+}
+.cookie__text { display: grid; gap: 4px; }
+.cookie p { margin: 0; }
+.cookie__title { font-family: var(--f-serif); font-size: 22px; font-weight: 700; line-height: 1.1; }
+.cookie__legal { margin-top: 4px !important; font-size: 12px; line-height: 1.45; color: var(--muted); }
+.cookie a { color: var(--red); }
+.cookie__details summary { cursor: pointer; width: fit-content; font-size: 12px; color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
+.cookie__btns { display: flex; gap: 8px; flex: none; }
+@media (max-width: 860px) {
+  .cookie { flex-direction: column; align-items: stretch; gap: 12px; padding: 14px 16px; bottom: calc(12px + env(safe-area-inset-bottom)); max-height: calc(100dvh - 100px - env(safe-area-inset-bottom)); }
+  body:has(.dock.is-shown) .cookie { bottom: calc(80px + env(safe-area-inset-bottom)); }
+  .cookie__btns .b { flex: 1; min-height: 44px; padding: 8px; white-space: normal; font-size: 12px; line-height: 1.3; }
+}
 
 /* ---------- страница документа ---------- */
 .doc { padding: var(--pad); max-width: 860px; margin: 0 auto; width: 100%; }
@@ -1351,6 +1375,7 @@ html:not(.js) [data-copy-address], html:not(.js) .hours > div:has([data-status])
             class="b"
             href="/assets/che-shashlik-menu.pdf"
             download
+            data-goal="click_menu_page"
           >
             <svg><use href="#i-down" /></svg>Скачать меню · PDF 6 МБ
           </a>
@@ -1830,6 +1855,9 @@ html:not(.js) [data-copy-address], html:not(.js) .hours > div:has([data-status])
           <a href="/#order">Доставка и бронь</a>
           <a href="/#interior">Интерьер</a>
           <a href="/#map">Контакты</a>
+          <a href="/privacy.html">Политика конфиденциальности</a>
+          <a href="/privacy.html#cookie">Использование cookie</a>
+          <button type="button" data-cookie-settings>Настройки cookie</button>
           <a href="https://instagram.com/che_shashlik.26" data-instagram target="_blank" rel="noopener">Instagram @che_shashlik.26</a
           ><span class="foot__star">*</span>
         </nav>
@@ -1904,6 +1932,39 @@ html:not(.js) [data-copy-address], html:not(.js) .hours > div:has([data-status])
       </div>
     </div>
 
+    <div
+      class="cookie"
+      id="cookie-banner"
+      role="region"
+      aria-label="Уведомление об использовании cookie"
+      hidden
+    >
+      <div class="cookie__text">
+        <p class="cookie__title">Сайт использует cookie</p>
+        <p>
+          Яндекс Метрика помогает нам улучшать сайт.
+        </p>
+        <details class="cookie__details">
+          <summary>Подробнее об обработке данных</summary>
+          <p class="cookie__legal">
+          Нажимая «Принять», вы соглашаетесь, что ИП Егоян Л. Д. обрабатывает
+          cookie, IP-адрес и данные о действиях на сайте с помощью Яндекс
+          Метрики по
+          <a href="/privacy.html#cookie">политике конфиденциальности</a>.
+          Передумать можно в «Настройках cookie» внизу страницы.
+          </p>
+        </details>
+      </div>
+      <div class="cookie__btns">
+        <button type="button" class="b b--fill b--sm" data-cookie="yes">
+          Принять
+        </button>
+        <button type="button" class="b b--sm" data-cookie="no">
+          Только необходимые
+        </button>
+      </div>
+    </div>
+
     <!-- фото блюда или интерьера крупно -->
     <dialog class="photo" id="photo" aria-label="Просмотр фотографии">
       <button class="photo__close" type="button" aria-label="Закрыть">
@@ -1916,8 +1977,9 @@ html:not(.js) [data-copy-address], html:not(.js) .hours > div:has([data-status])
     <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
     <script defer src="/assets/js/typo.js?v=229a3034"></script>
-    <script defer src="/assets/js/config.js?v=e275252b"></script>
+    <script defer src="/assets/js/config.js?v=d01b347e"></script>
     <script defer src="/assets/js/menu-data.js?v=595b44a5"></script>
-    <script defer src="/assets/js/app.js?v=9b6197d5"></script>
+    <script defer src="/assets/js/analytics.js?v=62db1379"></script>
+    <script defer src="/assets/js/app.js?v=e13a8fcc"></script>
   </body>
 </html>
